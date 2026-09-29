@@ -212,6 +212,10 @@ async function writeFile(path, text, message) {        // false = the file chang
   }
   const r = await fetch(ghUrl(path), { method: 'PUT', headers: ghHeaders(), body: JSON.stringify({ message, content: b64enc(text), sha: f.sha, branch: M.repo.branch }) });
   if (r.status === 409 || r.status === 422) return false;
+  if (r.status === 403 || r.status === 404) throw new Error(`GitHub said ${r.status}: the token can't write here.\n\n` +
+    `Fix it at github.com/settings/personal-access-tokens: open the token, click Edit, set Repository access to ` +
+    `"Only select repositories" with ${M.repo.name} selected, and Contents to "Read and write", then Update. ` +
+    `No new token needed: reload this page and tick again.`);
   if (!r.ok) throw new Error('GitHub said ' + r.status);
   FILES[path] = { text, sha: (await r.json()).content.sha };
   return true;
@@ -319,7 +323,7 @@ async function setItem(id, done, redo) {
   const msg = `${done ? (redo ? 'Solve with help' : 'Solve') : redo ? 'Mark redo' : 'Untick'}: ${it.label}`;
   try {
     if (!(await writeFile(path, lines.join('\n'), msg))) { await load(); toast('That list changed elsewhere; reloaded. Try again.'); return; }
-  } catch (e) { alert('Could not save the tick: ' + e.message + (LOCAL ? '' : '\n\nCheck that the token has Contents: Read and write on ' + M.repo.owner + '/' + M.repo.name + ', or reconnect.')); await load(); return; }
+  } catch (e) { alert('Could not save the tick. ' + e.message); await load(); return; }
   S = computeState(); render();
   if (done && !it.done) toast(LOCAL ? 'Ticked in problems.md' : 'Ticked: committed to GitHub');
 }
