@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DSA Progress</title>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+<link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.9.0/styles/github.min.css">
+<link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css">
+<style>
+  :root {
+    --bg: #f6f7f9; --panel: #ffffff; --ink: #16181d; --muted: #667085; --line: #e4e7ec;
+    --accent: #3b5bdb; --accent-soft: #e8edff; --good: #2f9e44; --good-soft: #e6f6ea;
+    --warn: #e8590c; --warn-soft: #fff0e6; --easy: #2f9e44; --medium: #e67700; --hard: #e03131;
+    --bar: #e9ecf2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115; --panel: #171a21; --ink: #e8eaf0; --muted: #98a2b3; --line: #262b36;
+      --accent: #7b93ff; --accent-soft: #1f2640; --good: #51cf66; --good-soft: #15291c;
+      --warn: #ff922b; --warn-soft: #2e1f12; --easy: #51cf66; --medium: #fcc419; --hard: #ff6b6b;
+      --bar: #232833;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code { font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--bar); padding: 0 4px; border-radius: 4px; }
+  header { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; padding: 20px 28px 8px; }
+  header h1 { font-size: 20px; margin: 0; letter-spacing: -0.01em; }
+  header .sub { color: var(--muted); }
+  header .spacer { flex: 1; }
+  button { font: inherit; border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+           border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+  button:hover { border-color: var(--accent); }
+  main { padding: 8px 28px 48px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+  .panel h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 12px; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+  .stat .v { font-size: 24px; font-weight: 650; letter-spacing: -0.02em; }
+  .stat .l { color: var(--muted); font-size: 12px; }
+  .stat.good .v { color: var(--good); } .stat.warn .v { color: var(--warn); }
+  .bar { height: 8px; background: var(--bar); border-radius: 99px; overflow: hidden; }
+  .bar > span { display: block; height: 100%; background: var(--accent); border-radius: 99px; transition: width .3s; }
+  .bar.done > span { background: var(--good); }
+  .overall { margin-top: 14px; }
+  .cols { display: grid; grid-template-columns: minmax(280px, 360px) minmax(0, 1fr); gap: 20px; align-items: start; }
+  @media (max-width: 900px) { .cols { grid-template-columns: 1fr; } header, main { padding-left: 16px; padding-right: 16px; } }
+  .side { display: grid; gap: 20px; position: sticky; top: 12px; }
+  @media (max-width: 900px) { .side { position: static; } }
+  .row { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-top: 1px solid var(--line); }
+  .row:first-of-type { border-top: 0; }
+  .row input[type=checkbox] { margin-top: 3px; width: 16px; height: 16px; accent-color: var(--good); flex: none; cursor: pointer; }
+  .row .body { flex: 1; min-width: 0; }
+  .row .title { display: flex; gap: 6px; flex-wrap: wrap; align-items: baseline; }
+  .row.done .title > a, .row.done .title > .t { color: var(--muted); text-decoration: line-through; }
+  .meta { color: var(--muted); font-size: 12px; }
+  .why { color: var(--muted); font-size: 12.5px; margin-top: 2px; }
+  .pill { font-size: 11px; font-weight: 600; padding: 0 7px; border-radius: 99px; border: 1px solid var(--line); white-space: nowrap; }
+  .pill.Easy { color: var(--easy); } .pill.Medium { color: var(--medium); } .pill.Hard { color: var(--hard); }
+  .pill.added { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
+  .pill.redo { background: var(--warn-soft); border-color: transparent; color: var(--warn); }
+  .pill.mod { color: var(--muted); }
+  .redo-btn { border: 0; background: none; color: var(--muted); padding: 0 4px; font-size: 12px; }
+  .redo-btn.on { color: var(--warn); font-weight: 600; }
+  .empty { color: var(--muted); font-size: 13px; }
+  .modules { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px; cursor: pointer; text-align: left; display: grid; gap: 8px; }
+  .card:hover { border-color: var(--accent); }
+  .card.open { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
+  .card.complete { border-color: var(--good); }
+  .card .top { display: flex; gap: 8px; align-items: baseline; }
+  .card .num { font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
+  .card.complete .num { color: var(--good); }
+  .card .name { font-weight: 600; line-height: 1.3; }
+  .card .next { color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .detail { margin-top: 16px; }
+  .detail .head { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 6px; }
+  .detail .head h3 { margin: 0; font-size: 18px; }
+  .filters { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0 4px; }
+  .filters select, .filters input { font: inherit; background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 5px 8px; }
+  .subtopic { margin-top: 18px; }
+  .subtopic h4 { margin: 0 0 4px; font-size: 14px; display: flex; gap: 10px; align-items: center; }
+  .subtopic h4 .meta { font-weight: 400; }
+  .weeks { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
+  .week { flex: none; border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; min-width: 104px; font-size: 12px; }
+  .week.now { border-color: var(--accent); background: var(--accent-soft); }
+  .week b { display: block; font-size: 13px; }
+  .btn-sm { font-size: 12px; padding: 2px 9px; border-radius: 7px; }
+  .reader { position: fixed; inset: 0; background: var(--bg); z-index: 20; display: grid; grid-template-rows: auto 1fr; }
+  .reader[hidden] { display: none; }
+  .reader .bar-top { display: flex; gap: 10px; align-items: center; padding: 10px 20px; border-bottom: 1px solid var(--line); background: var(--panel); flex-wrap: wrap; }
+  .reader .bar-top .path { color: var(--muted); font-size: 12px; font-family: ui-monospace, Menlo, monospace; }
+  .reader .wrap { display: grid; grid-template-columns: 260px minmax(0, 1fr); min-height: 0; }
+  .reader nav { overflow: auto; border-right: 1px solid var(--line); padding: 14px 10px 40px 16px; font-size: 13px; }
+  .reader nav a { display: block; color: var(--muted); padding: 3px 6px; border-radius: 6px; }
+  .reader nav a.h3 { padding-left: 18px; font-size: 12.5px; }
+  .reader nav a:hover, .reader nav a.on { color: var(--ink); background: var(--accent-soft); text-decoration: none; }
+  .reader article { overflow: auto; padding: 24px 40px 80px; }
+  .md { max-width: 860px; line-height: 1.65; font-size: 15px; }
+  .md h1 { font-size: 26px; margin: 0 0 6px; } .md h2 { font-size: 21px; margin: 36px 0 10px; padding-top: 8px; border-top: 1px solid var(--line); }
+  .md h3 { font-size: 17px; margin: 26px 0 8px; } .md h4 { font-size: 15px; margin: 18px 0 6px; }
+  .md blockquote { margin: 12px 0; padding: 6px 14px; border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 0 8px 8px 0; }
+  .md table { border-collapse: collapse; margin: 12px 0; display: block; overflow-x: auto; font-size: 13.5px; }
+  .md th, .md td { border: 1px solid var(--line); padding: 5px 10px; text-align: left; vertical-align: top; }
+  .md th { background: var(--bar); }
+  .md pre { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; overflow-x: auto; font-size: 13px; line-height: 1.5; }
+  .md pre code { background: none; padding: 0; font-size: 13px; }
+  .md pre code.hljs { background: none; padding: 0; }
+  .md details { border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; margin: 8px 0; background: var(--panel); }
+  .md details summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+  .md img { max-width: 100%; }
+  @media (max-width: 900px) { .reader .wrap { grid-template-columns: 1fr; } .reader nav { display: none; } .reader article { padding: 16px; } }
+  .toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--ink); color: var(--bg);
+           padding: 8px 14px; border-radius: 8px; font-size: 13px; opacity: 0; transition: opacity .2s; pointer-events: none; }
+  .toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+<header>
+  <h1>DSA progress</h1>
+  <span class="sub" id="sub"></span>
+  <span class="spacer"></span>
+  <input id="search" type="search" placeholder="Search all problems…" style="font:inherit;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);min-width:220px">
+  <button id="conn" hidden title="Needed only on the web version, to save ticks back to the repo"></button>
+  <button id="replan" title="Re-flow the unchecked items into a new plan starting today">Replan from today</button>
+</header>
+<main>
+  <section class="panel">
+    <div class="stats" id="stats"></div>
+    <div class="overall"><div class="bar"><span id="overallBar"></span></div></div>
+  </section>
+  <section class="panel"><h2>Weeks</h2><div class="weeks" id="weeks"></div></section>
+  <div class="cols">
+    <div class="side">
+      <section class="panel"><h2 id="todayTitle">Today</h2><div id="today"></div></section>
+      <section class="panel"><h2>Overdue</h2><div id="overdue"></div></section>
+      <section class="panel"><h2>#redo</h2><div id="redo"></div></section>
+    </div>
+    <div>
+      <div class="modules" id="modules"></div>
+      <section class="panel detail" id="detail" hidden></section>
+    </div>
+  </div>
+</main>
+<div class="reader" id="reader" hidden>
+  <div class="bar-top">
+    <button id="rBack" title="Back">←</button>
+    <b id="rTitle"></b><span class="path" id="rPath"></span>
+    <span class="spacer" style="flex:1"></span>
+    <select id="rMod" style="font:inherit;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:5px 8px"></select>
+    <a id="rVs" href="#">Open in VS Code</a>
+    <button id="rClose" title="Close (Esc)">Close ✕</button>
+  </div>
+  <div class="wrap"><nav id="rToc"></nav><article id="rBody"><div class="md" id="rMd"></div></article></div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+let S = null;
+const store = { get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
+                set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} } };
+let openMod = store.get('openMod', null);
+let F = store.get('filters', { status: 'all', source: 'all', diff: 'all' });
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const hm = m => { m = Math.round(Math.abs(m)); return m >= 60 ? `${Math.floor(m / 60)}h ${String(m % 60).padStart(2, '0')}m` : `${m}m`; };
+const fmtDate = iso => new Date(iso + 'T00:00').toLocaleDateString(undefined, { weekday: 'short', day: 'numeric', month: 'short' });
+const allItems = () => S.modules.flatMap(m => m.subtopics.flatMap(s => s.items.map(i => ({ ...i, module: m }))));
+const byId = id => allItems().find(i => i.id === id);
+
+function toast(msg) { const t = $('toast'); t.textContent = msg; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 1800); }
+
+// ---------- data layer: the page computes everything from the kit's own files ----------
+// Locally (make dashboard) the Python server reads and writes the files. On GitHub Pages the files come
+// from the site's copy (read-only), or from the GitHub API once you connect a token: then a tick is a commit.
+const LOCAL = ['127.0.0.1', 'localhost'].includes(location.hostname) && !new URLSearchParams(location.search).has('web');
+let M = null;                                   // manifest.json: {repo: {owner, name, branch}, modules: [...], root}
+const FILES = {};                               // path -> {text, sha}
+const token = () => { try { return localStorage.getItem('ghToken') || ''; } catch { return ''; } };
+const canWrite = () => LOCAL || !!token();
+const b64dec = b => new TextDecoder().decode(Uint8Array.from(atob(b.replace(/\n/g, '')), c => c.charCodeAt(0)));
+const b64enc = str => { const u = new TextEncoder().encode(str); let bin = ''; for (let i = 0; i < u.length; i += 0x8000) bin += String.fromCharCode(...u.subarray(i, i + 0x8000)); return btoa(bin); };
+const ghUrl = path => `https://api.github.com/repos/${M.repo.owner}/${M.repo.name}/contents/${path.split('/').map(encodeURIComponent).join('/')}`;
+const ghHeaders = () => ({ Accept: 'application/vnd.github+json', Authorization: 'Bearer ' + token(), 'X-GitHub-Api-Version': '2022-11-28' });
+
+async function readFile(path) {
+  if (LOCAL) {
+    const r = await fetch('/api/raw?path=' + encodeURIComponent(path), { cache: 'no-store' });
+    if (!r.ok) throw new Error('not found: ' + path);
+    return FILES[path] = await r.json();
+  }
+  if (token()) {
+    const r = await fetch(ghUrl(path) + '?ref=' + M.repo.branch, { cache: 'no-store', headers: ghHeaders() });
+    if (r.ok) { const j = await r.json(); return FILES[path] = { text: b64dec(j.content), sha: j.sha }; }
+    if (r.status === 401) toast('GitHub rejected the token: reconnect');
+  }
+  const r = await fetch('files/' + path, { cache: 'no-store' });
+  if (!r.ok) throw new Error('not found: ' + path);
+  return FILES[path] = { text: await r.text(), sha: null };
+}
+async function writeFile(path, text, message) {        // false = the file changed elsewhere first
+  const f = FILES[path];
+  if (LOCAL) {
+    const r = await fetch('/api/raw', { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ path, text, sha: f.sha }) });
+    if (r.status === 409) return false;
+    if (!r.ok) throw new Error('save failed');
+    FILES[path] = { text, sha: (await r.json()).sha };
+    return true;
+  }
+  const r = await fetch(ghUrl(path), { method: 'PUT', headers: ghHeaders(), body: JSON.stringify({ message, content: b64enc(text), sha: f.sha, branch: M.repo.branch }) });
+  if (r.status === 409 || r.status === 422) return false;
+  if (!r.ok) throw new Error('GitHub said ' + r.status);
+  FILES[path] = { text, sha: (await r.json()).content.sha };
+  return true;
+}
+
+// Same parsing and time model as scripts/kit.py.
+const PROBLEM = /^- \[([ xX])\] \[([^\]]+)\]\(([^)\s]+)\) · (Easy|Medium|Hard)((?: · (?:🔒|📖))*) · `([^`]+)` — (.+)$/u;
+const TASK = /^- \[([ xX])\] \*\*([A-Za-z ]+)\*\* · (.+?) · (\d+)m\b(.*)$/u;
+const MIN = { Easy: 20, Medium: 40, Hard: 60 }, MIN_WORKED = { Easy: 15, Medium: 25, Hard: 35 };
+function whyHtml(why) {
+  why = why.replace(/\s*·\s*\[video\]\((https?:\/\/[^)]+)\)/, '').replace(/\s*#redo\b/g, '').trim().replace(/^added · /, '');
+  return esc(why).replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>').replace(/`([^`]+)`/g, '<code>$1</code>');
+}
+function parseModule(dir, text) {
+  const lines = text.split('\n');
+  const title = (lines.find(l => l.startsWith('# ')) || dir).slice(2).split('·').slice(1).join('·').trim() || dir;
+  let section = '', subtopic = '';
+  const core = [];
+  lines.forEach((line, i) => {
+    if (line.startsWith('## ')) { section = line.slice(3).trim(); subtopic = ''; return; }
+    if (line.startsWith('### ')) { subtopic = line.slice(4).trim(); return; }
+    if (section !== 'Core' || !line.startsWith('- [')) return;
+    const base = { id: `${dir}:${i + 1}`, raw: line, subtopic, redo: /#redo\b/.test(line) };
+    let m;
+    if ((m = PROBLEM.exec(line))) {
+      const [, box, label, url, diff, flags, pattern, why] = m;
+      const worked = flags.includes('📖');
+      const [num, ...rest] = label.split('. '); const t = rest.join('. ');
+      const vid = /\[video\]\((https?:\/\/[^)]+)\)/.exec(why);
+      core.push({ ...base, kind: 'problem', done: box !== ' ', label, url, difficulty: diff, pattern, worked,
+        premium: flags.includes('🔒'), added: line.includes('— added'), video: vid ? vid[1] : null, why: whyHtml(why),
+        minutes: (worked ? MIN_WORKED : MIN)[diff], key: `${dir}|${url}`,
+        short: `${num.startsWith('CSES') ? '' : 'LC '}${num} ${t.length <= 40 ? t : t.slice(0, 39) + '…'}${worked ? ' 📖' : ''}` });
+    } else if ((m = TASK.exec(line))) {
+      const [, box, kind, label, mins] = m;
+      core.push({ ...base, kind, done: box !== ' ', label, minutes: +mins, key: `${dir}|${kind}:${label}`, short: `${kind}: ${label}` });
+    }
+  });
+  const subtopics = [];
+  for (const it of core) {
+    if (!subtopics.length || subtopics.at(-1).name !== it.subtopic) subtopics.push({ name: it.subtopic, items: [] });
+    subtopics.at(-1).items.push(it);
+  }
+  const probs = core.filter(i => i.kind === 'problem');
+  const sum = xs => xs.reduce((a, i) => a + i.minutes, 0);
+  return { dir, number: dir.slice(0, 2), title, notes: `modules/${dir}/NOTES.md`, subtopics, core,
+    done: core.filter(i => i.done).length, total: core.length,
+    problems_done: probs.filter(i => i.done).length, problems_total: probs.length,
+    hours_left: sum(core.filter(i => !i.done)) / 60, hours_total: sum(core) / 60,
+    next: core.find(i => !i.done)?.short || null };
+}
+function computeState() {
+  const today = new Date().toLocaleDateString('en-CA');
+  const modules = M.modules.map(d => parseModule(d, FILES[`modules/${d}/problems.md`].text));
+  const byKey = Object.fromEntries(modules.flatMap(m => m.core.map(i => [i.key, i])));
+  const days = FILES['data/schedule.json'] ? JSON.parse(FILES['data/schedule.json'].text).days : [];
+  const seen = new Set(), planned = [], before = [], todayEntries = [], overdue = [];
+  for (const d of days) {
+    if (d.date > today) break;
+    for (const e of d.entries) {
+      if (e.key && !seen.has(e.key)) { seen.add(e.key); planned.push(e.key); if (d.date < today) before.push(e.key); }
+      if (d.date === today) todayEntries.push(e);
+      else if (e.key && byKey[e.key] && !byKey[e.key].done && !overdue.includes(e)) overdue.push(e);
+    }
+  }
+  const mins = keys => keys.reduce((a, k) => a + (byKey[k]?.minutes || 0), 0);
+  const allCore = modules.flatMap(m => m.core);
+  const entry = e => { const it = e.key ? byKey[e.key] : null; return { label: e.label, minutes: e.minutes, module: e.module, id: it ? it.id : null, done: !!(it && it.done) }; };
+  const weeks = [];
+  if (days.length) {
+    const start = new Date(days[0].date + 'T00:00');
+    for (const d of days) {
+      const w = Math.floor((new Date(d.date + 'T00:00') - start) / 864e5 / 7) + 1;
+      if (!weeks[w - 1]) weeks[w - 1] = { week: w, from: d.date, to: d.date, mods: new Set() };
+      weeks[w - 1].to = d.date;
+      d.entries.forEach(e => e.module && weeks[w - 1].mods.add(e.module.slice(0, 2)));
+    }
+  }
+  return {
+    root: M.root || '', today,
+    plan: { start: days[0]?.date || null, end: days.at(-1)?.date || null,
+            weeks: weeks.filter(Boolean).map(w => ({ week: w.week, from: w.from, to: w.to, modules: [...w.mods].sort() })) },
+    pace: { planned_min: mins(planned), planned_before_min: mins(before),
+            done_min: allCore.filter(i => i.done).reduce((a, i) => a + i.minutes, 0), total_min: allCore.reduce((a, i) => a + i.minutes, 0) },
+    today_items: todayEntries.map(entry), overdue: overdue.map(entry), modules,
+  };
+}
+async function load() {
+  try {
+    if (!M) M = await (await fetch('manifest.json', { cache: 'no-store' })).json();
+    await Promise.all([...M.modules.map(d => readFile(`modules/${d}/problems.md`)), readFile('data/schedule.json').catch(() => null)]);
+    S = computeState(); render(); renderConn();
+  } catch (e) { toast('Could not load: ' + e.message); }
+}
+async function setItem(id, done, redo) {
+  const it = byId(id);
+  if (!it) return;
+  if (!canWrite()) { toast('Read-only here: connect GitHub (top right) to tick'); render(); return; }
+  const path = `modules/${it.module.dir}/problems.md`;
+  const lines = FILES[path].text.split('\n'), i = +id.split(':').pop() - 1;
+  if (lines[i] !== it.raw) { await load(); toast('That list changed elsewhere; reloaded. Try again.'); return; }
+  let line = lines[i].replace(/^- \[[ xX]\]/, done ? '- [x]' : '- [ ]').replace(/\s*#redo\b/g, '').trimEnd();
+  if (redo) line += ' #redo';
+  lines[i] = line;
+  const msg = `${done ? (redo ? 'Solve with help' : 'Solve') : redo ? 'Mark redo' : 'Untick'}: ${it.label}`;
+  try {
+    if (!(await writeFile(path, lines.join('\n'), msg))) { await load(); toast('That list changed elsewhere; reloaded. Try again.'); return; }
+  } catch (e) { toast(e.message); await load(); return; }
+  S = computeState(); render();
+  if (done && !it.done) toast(LOCAL ? 'Ticked in problems.md' : 'Ticked: committed to GitHub');
+}
+function renderConn() {
+  const b = $('conn');
+  if (LOCAL) { b.hidden = true; return; }
+  b.hidden = false;
+  b.textContent = token() ? '● Connected to GitHub' : 'Connect GitHub to tick';
+  $('replan').hidden = true;
+}
+
+function itemRow(it, showModule) {
+  const title = it.kind === 'problem'
+    ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.label)}</a>
+       <span class="pill ${it.difficulty}">${it.difficulty}</span>
+       ${it.worked ? '<span class="pill" title="Worked example in NOTES: read it, then re-solve from a blank file">📖 worked</span>' : ''}
+       ${it.premium ? '<span class="pill" title="LeetCode Premium">🔒</span>' : ''}
+       ${it.added ? '<span class="pill added" title="Not on the sheet: added for a gap">added</span>' : ''}
+       ${it.redo ? '<span class="pill redo">redo</span>' : ''}
+       ${showModule ? `<span class="pill mod">${it.module.number}</span>` : ''}`
+    : `<span class="t"><b>${esc(it.kind)}</b> · ${esc(it.label)}</span> ${showModule ? `<span class="pill mod">${it.module.number}</span>` : ''}`;
+  const meta = it.kind === 'problem'
+    ? `<div class="why"><code>${esc(it.pattern)}</code> ${it.why}</div>
+       <div class="meta">${it.minutes} min${it.video ? ` · <a href="${esc(it.video)}" target="_blank" rel="noopener">video</a>` : ''}
+       · <button class="redo-btn ${it.redo ? 'on' : ''}" data-redo="${it.id}" title="Needed help? Mark for the Sunday review">${it.redo ? '↺ redo (tap to clear)' : '↺ mark redo'}</button></div>`
+    : `<div class="meta">${it.minutes} min${readBtn(it)}</div>`;
+  return `<div class="row ${it.done ? 'done' : ''}"><input type="checkbox" data-id="${it.id}" ${it.done ? 'checked' : ''}>
+          <div class="body"><div class="title">${title}</div>${meta}</div></div>`;
+}
+
+function readBtn(it) {
+  if (it.kind !== 'Read') return '';
+  const m = /section (\d+)/i.exec(it.label);
+  const target = /projects\/[\w-]+\/README\.md/.exec(it.label);
+  if (target) return ` · <button class="btn-sm" data-doc="${target[0]}">📘 Open</button>`;
+  return ` · <button class="btn-sm" data-notes="${it.module.dir}" data-sec="${m ? m[1] : ''}">📘 Read${m ? ' section ' + m[1] : ''}</button>`;
+}
+
+function planRow(e) {
+  if (!e.id) return `<div class="row"><span style="width:16px"></span><div class="body"><div class="title"><span class="t">${esc(e.label)}</span></div><div class="meta">${e.minutes} min</div></div></div>`;
+  const it = byId(e.id);
+  return it ? itemRow(it, true) : '';
+}
+
+function render() {
+  const p = S.pace;
+  // Ahead = done more than the plan expects by tonight; behind = still missing work from earlier days.
+  const diff = p.done_min >= p.planned_min ? p.done_min - p.planned_min : Math.min(0, p.done_min - p.planned_before_min);
+  const probs = allItems().filter(i => i.kind === 'problem');
+  const solved = probs.filter(i => i.done).length, redoN = probs.filter(i => i.redo).length;
+  $('sub').textContent = S.plan.start ? `Plan ${fmtDate(S.plan.start)} → ${fmtDate(S.plan.end)}` : 'No plan yet: run make replan';
+  const paceCls = diff > 0 ? 'good' : (diff < -120 ? 'warn' : '');
+  $('stats').innerHTML = `
+    <div class="stat"><div class="v">${Math.round(100 * p.done_min / p.total_min)}%</div><div class="l">of Core work done (${hm(p.done_min)} of ${hm(p.total_min)})</div></div>
+    <div class="stat"><div class="v">${solved}<span style="font-size:15px;color:var(--muted)"> / ${probs.length}</span></div><div class="l">problems solved</div></div>
+    <div class="stat ${paceCls}"><div class="v">${diff === 0 ? 'On track' : (diff > 0 ? '+' : '−') + hm(diff)}</div><div class="l">${diff > 0 ? 'ahead of plan' : diff < 0 ? 'behind plan' : `today's plan: ${hm(p.planned_min - p.planned_before_min)}`}${diff > 240 ? ' · replan to finish sooner' : diff < -120 ? ' · replan or catch up' : ''}</div></div>
+    <div class="stat"><div class="v">${S.modules.filter(m => m.done === m.total).length}<span style="font-size:15px;color:var(--muted)"> / ${S.modules.length}</span></div><div class="l">modules complete</div></div>
+    <div class="stat ${redoN ? 'warn' : ''}"><div class="v">${redoN}</div><div class="l">marked #redo</div></div>`;
+  $('overallBar').style.width = `${100 * p.done_min / p.total_min}%`;
+
+  const nowWeek = S.plan.weeks.find(w => w.from <= S.today && S.today <= w.to);
+  $('weeks').innerHTML = S.plan.weeks.map(w => `<div class="week ${w === nowWeek ? 'now' : ''}"><b>Week ${w.week}</b>${fmtDate(w.from).replace(/^\w+ /, '')} – ${fmtDate(w.to).replace(/^\w+ /, '')}<div class="meta">${w.modules.join(' · ') || '—'}</div></div>`).join('');
+  const nowEl = document.querySelector('.week.now'); if (nowEl && !render.scrolled) { const strip = $('weeks'); strip.scrollLeft = nowEl.offsetLeft - strip.offsetLeft - strip.clientWidth / 2 + nowEl.clientWidth / 2; render.scrolled = true; }
+
+  $('todayTitle').textContent = `Today · ${fmtDate(S.today)}`;
+  $('today').innerHTML = S.today_items.length ? S.today_items.map(planRow).join('') : `<div class="empty">Nothing scheduled today${S.plan.start && S.today < S.plan.start ? ' (the plan starts ' + fmtDate(S.plan.start) + ')' : ''}. Pick anything from a module →</div>`;
+  $('overdue').innerHTML = S.overdue.length ? S.overdue.slice(0, 15).map(planRow).join('') + (S.overdue.length > 15 ? `<div class="meta">+ ${S.overdue.length - 15} more</div>` : '') : '<div class="empty">Nothing overdue.</div>';
+  const redo = probs.filter(i => i.redo);
+  $('redo').innerHTML = redo.length ? redo.map(i => itemRow(i, true)).join('') : '<div class="empty">Nothing to redo. Mark a problem ↺ when you needed a hint.</div>';
+
+  $('modules').innerHTML = S.modules.map(m => {
+    const pct = m.total ? 100 * m.done / m.total : 0, complete = m.done === m.total;
+    return `<button class="card ${openMod === m.dir ? 'open' : ''} ${complete ? 'complete' : ''}" data-mod="${m.dir}">
+      <div class="top"><span class="num">${m.number}</span><span class="name">${esc(m.title)}</span></div>
+      <div class="bar ${complete ? 'done' : ''}"><span style="width:${pct}%"></span></div>
+      <div class="meta">${m.problems_done}/${m.problems_total} problems · ${m.done}/${m.total} items · ${complete ? 'done ✓' : hm(m.hours_left * 60) + ' left'}</div>
+      <div class="next">${complete ? '' : 'Next: ' + esc(m.next || '')}</div></button>`;
+  }).join('');
+  renderDetail();
+}
+
+function passes(it) {
+  if (F.status === 'unsolved' && it.done) return false;
+  if (F.status === 'solved' && !it.done) return false;
+  if (F.status === 'redo' && !it.redo) return false;
+  if (it.kind !== 'problem') return F.source === 'all' && F.diff === 'all' && F.status !== 'redo';
+  if (F.source === 'sheet' && it.added) return false;
+  if (F.source === 'added' && !it.added) return false;
+  if (F.diff !== 'all' && it.difficulty !== F.diff) return false;
+  return true;
+}
+
+function renderDetail() {
+  const box = $('detail'), q = $('search').value.trim().toLowerCase();
+  const filters = `<div class="filters">
+    <select data-f="status">${['all', 'unsolved', 'solved', 'redo'].map(v => `<option ${F.status === v ? 'selected' : ''}>${v}</option>`).join('')}</select>
+    <select data-f="source">${['all', 'sheet', 'added'].map(v => `<option ${F.source === v ? 'selected' : ''}>${v}</option>`).join('')}</select>
+    <select data-f="diff">${['all', 'Easy', 'Medium', 'Hard'].map(v => `<option ${F.diff === v ? 'selected' : ''}>${v}</option>`).join('')}</select></div>`;
+  if (q) {
+    const hits = allItems().filter(i => i.kind === 'problem' && passes(i) && (i.label + ' ' + i.pattern + ' ' + i.why).toLowerCase().includes(q));
+    box.hidden = false;
+    box.innerHTML = `<div class="head"><h3>Search: “${esc(q)}”</h3><span class="meta">${hits.length} problems</span></div>${filters}${hits.map(i => itemRow(i, true)).join('') || '<div class="empty">No matches.</div>'}`;
+    return;
+  }
+  const m = S.modules.find(x => x.dir === openMod);
+  if (!m) { box.hidden = true; return; }
+  box.hidden = false;
+  box.innerHTML = `<div class="head"><h3>${m.number} · ${esc(m.title)}</h3>
+      <span class="meta">${m.done}/${m.total} items · ${hm(m.hours_left * 60)} of ${hm(m.hours_total * 60)} left</span>
+      <button class="btn-sm" data-notes="${m.dir}">📘 Read notes</button>
+      ${S.root ? `<a href="vscode://file${encodeURI(S.root + '/' + m.notes)}">Open in VS Code</a>` : ''}</div>${filters}` +
+    m.subtopics.map(s => {
+      const shown = s.items.filter(passes);
+      if (!shown.length) return '';
+      const d = s.items.filter(i => i.done).length;
+      return `<div class="subtopic"><h4>${esc(s.name)} <span class="meta">${d}/${s.items.length}</span></h4>${shown.map(i => itemRow({ ...i, module: m }, false)).join('')}</div>`;
+    }).join('') || '<div class="empty">Nothing matches these filters.</div>';
+}
+
+document.addEventListener('change', e => {
+  const cb = e.target.closest('input[type=checkbox][data-id]');
+  if (cb) { const it = byId(cb.dataset.id); setItem(cb.dataset.id, cb.checked, it ? it.redo : false); if (cb.checked) toast('Nice — ticked in problems.md'); return; }
+  const sel = e.target.closest('select[data-f]');
+  if (sel) { F[sel.dataset.f] = sel.value; store.set('filters', F); renderDetail(); }
+});
+document.addEventListener('click', e => {
+  const r = e.target.closest('[data-redo]');
+  if (r) { const it = byId(r.dataset.redo); if (it) setItem(it.id, it.done, !it.redo); return; }
+  const c = e.target.closest('.card[data-mod]');
+  if (c) {
+    openMod = openMod === c.dataset.mod ? null : c.dataset.mod; store.set('openMod', openMod);
+    $('search').value = ''; render();
+    if (openMod) $('detail').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+});
+$('search').addEventListener('input', renderDetail);
+
+// ---------- notes reader ----------
+const R = { stack: [], cur: null };
+const slug = t => t.toLowerCase().replace(/<[^>]+>/g, '').replace(/[^\w\s.-]/g, '').trim().replace(/\s+/g, '-');
+const dirOf = p => p.includes('/') ? p.slice(0, p.lastIndexOf('/') + 1) : '';
+function resolvePath(base, rel) {
+  const parts = (dirOf(base) + rel).split('/'), out = [];
+  for (const x of parts) { if (x === '..') out.pop(); else if (x && x !== '.') out.push(x); }
+  return out.join('/');
+}
+async function openDoc(path, anchor, push = true) {
+  let d;
+  try { d = { path, text: (await readFile(path)).text }; } catch { toast('Could not open ' + path); return; }
+  if (push && R.cur) R.stack.push(R.cur);
+  R.cur = { path: d.path, anchor };
+  const isMd = d.path.endsWith('.md');
+  let htmlOut;
+  if (!isMd) {
+    htmlOut = `<pre><code class="language-cpp">${esc(d.text)}</code></pre>`;
+  } else if (window.marked) {
+    // "**Problem:** …" / "**Signals:** …" on consecutive lines are separate fields, not one paragraph.
+    // Only touch prose: split out fenced code blocks first.
+    const text = d.text.split(/(```[\s\S]*?```)/g)
+      .map((part, i) => i % 2 ? part : part.replace(/([^\n])\n(\*\*[^*\n]{1,60}\*\*)/g, '$1\n\n$2')).join('');
+    htmlOut = marked.parse(text, { gfm: true });
+  } else {
+    htmlOut = `<p class="meta">Offline: showing plain text (the markdown renderer loads from the internet).</p><pre>${esc(d.text)}</pre>`;
+  }
+  const md = $('rMd'); md.innerHTML = htmlOut;
+  md.querySelectorAll('pre code').forEach(c => {
+    if (c.className.includes('language-c++')) c.className = 'language-cpp';
+    if (window.hljs) try { hljs.highlightElement(c); } catch {}
+  });
+  const toc = [];
+  md.querySelectorAll('h1, h2, h3').forEach(h => { h.id = slug(h.textContent); if (h.tagName !== 'H1') toc.push(h); });
+  $('rToc').innerHTML = toc.map(h => `<a class="${h.tagName.toLowerCase()}" href="#${h.id}" data-jump="${h.id}">${esc(h.textContent)}</a>`).join('');
+  const mod = /^modules\/([\w-]+)\//.exec(d.path);
+  $('rTitle').textContent = mod ? (S.modules.find(m => m.dir === mod[1])?.number + ' · ' + S.modules.find(m => m.dir === mod[1])?.title) : d.path.split('/').pop();
+  $('rPath').textContent = d.path;
+  $('rVs').hidden = !S.root; if (S.root) $('rVs').href = 'vscode://file' + encodeURI(S.root + '/' + d.path);
+  $('rMod').innerHTML = S.modules.map(m => `<option value="${m.dir}" ${mod && mod[1] === m.dir ? 'selected' : ''}>${m.number} · ${esc(m.title)}</option>`).join('');
+  $('rBack').disabled = !R.stack.length;
+  $('reader').hidden = false; document.body.style.overflow = 'hidden';
+  history.replaceState(null, '', '#doc=' + encodeURIComponent(d.path) + (anchor ? '&at=' + encodeURIComponent(anchor) : ''));
+  jump(anchor);
+}
+function jump(anchor) {
+  const body = $('rBody');
+  if (!anchor) { body.scrollTop = 0; return; }
+  let el = document.getElementById(anchor);
+  if (!el && /^\d+$/.test(anchor)) el = [...$('rMd').querySelectorAll('h2')].find(h => h.textContent.trim().startsWith(anchor + '.'));
+  if (el) body.scrollTop = el.offsetTop - 12; else body.scrollTop = 0;
+}
+function openNotes(dir, sec) { openDoc(`modules/${dir}/NOTES.md`, sec || ''); }
+function closeReader() { $('reader').hidden = true; document.body.style.overflow = ''; R.stack = []; R.cur = null; history.replaceState(null, '', location.pathname); }
+$('rClose').onclick = closeReader;
+$('rBack').onclick = () => { const prev = R.stack.pop(); if (prev) openDoc(prev.path, prev.anchor, false); };
+$('rMod').onchange = e => openNotes(e.target.value);
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('reader').hidden) closeReader(); });
+$('rBody').addEventListener('scroll', () => {
+  const hs = [...$('rMd').querySelectorAll('h2, h3')]; const top = $('rBody').scrollTop + 40;
+  let cur = null; for (const h of hs) { if (h.offsetTop <= top) cur = h.id; else break; }
+  $('rToc').querySelectorAll('a').forEach(a => a.classList.toggle('on', a.dataset.jump === cur));
+});
+document.addEventListener('click', e => {
+  const n = e.target.closest('[data-notes]');
+  if (n) { e.preventDefault(); e.stopPropagation(); openNotes(n.dataset.notes, n.dataset.sec); return; }
+  const dbtn = e.target.closest('[data-doc]');
+  if (dbtn) { e.preventDefault(); openDoc(dbtn.dataset.doc); return; }
+  const j = e.target.closest('[data-jump]');
+  if (j) { e.preventDefault(); jump(j.dataset.jump); return; }
+  const a = e.target.closest('#rMd a[href]');
+  if (a) {
+    const href = a.getAttribute('href');
+    if (/^https?:|^vscode:|^mailto:/.test(href)) { a.target = '_blank'; a.rel = 'noopener'; return; }
+    e.preventDefault();
+    if (href.startsWith('#')) { jump(slug(decodeURIComponent(href.slice(1)))); return; }
+    const [file, frag] = href.split('#');
+    openDoc(resolvePath(R.cur.path, file), frag ? slug(decodeURIComponent(frag)) : '');
+  }
+}, true);
+{ const h = new URLSearchParams(location.hash.slice(1)); if (h.get('doc')) setTimeout(() => openDoc(h.get('doc'), h.get('at') || ''), 300); }
+$('replan').addEventListener('click', async () => {
+  if (!confirm('Rebuild the plan from today, using only unchecked items? (SCHEDULE.md is regenerated.)')) return;
+  await fetch('/api/replan', { method: 'POST' }); await load(); toast('Plan rebuilt from today');
+});
+$('conn').addEventListener('click', async () => {
+  if (token()) {
+    if (confirm('Disconnect? Ticking stops working in this browser until you connect again.')) { try { localStorage.removeItem('ghToken'); } catch {} await load(); }
+    return;
+  }
+  const t = prompt('Paste a GitHub fine-grained token with Contents: Read and write on ' + M.repo.owner + '/' + M.repo.name +
+                   ' only. It stays in this browser (localStorage) and is sent only to api.github.com.');
+  if (!t) return;
+  const r = await fetch(`https://api.github.com/repos/${M.repo.owner}/${M.repo.name}`, { headers: { Authorization: 'Bearer ' + t.trim() } });
+  if (!r.ok) { toast('GitHub rejected that token (' + r.status + ')'); return; }
+  const j = await r.json();
+  if (!j.permissions?.push) { toast('That token can read but not write this repo'); return; }
+  try { localStorage.setItem('ghToken', t.trim()); } catch {}
+  toast('Connected: ticks now commit to GitHub'); await load();
+});
+load();
+setInterval(() => { if (document.visibilityState === 'visible' && !document.activeElement?.matches('input[type=search]')) load(); }, LOCAL ? 30000 : 120000);
+</script>
+</body>
+</html>

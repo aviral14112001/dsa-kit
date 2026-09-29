@@ -1,0 +1,2874 @@
+{
+ "args": [
+  "scripts/schedule.py",
+  "--start",
+  "2026-09-27",
+  "--all"
+ ],
+ "days": [
+  {
+   "date": "2026-09-27",
+   "entries": [
+    {
+     "label": "Read: Notes section 1, then run `make test` and `make run F=practice/_template.cpp` once",
+     "minutes": 45,
+     "module": "01-language",
+     "key": "01-language|Read:Notes section 1, then run `make test` and `make run F=practice/_template.cpp` once"
+    },
+    {
+     "label": "LC 1929 Concatenation of Array",
+     "minutes": 20,
+     "module": "01-language",
+     "key": "01-language|https://leetcode.com/problems/concatenation-of-array/"
+    },
+    {
+     "label": "LC 1480 Running Sum of 1d Array",
+     "minutes": 20,
+     "module": "01-language",
+     "key": "01-language|https://leetcode.com/problems/running-sum-of-1d-array/"
+    },
+    {
+     "label": "Read: Notes section 2 + examples/value_vs_reference.cpp + examples/overflow.cpp",
+     "minutes": 60,
+     "module": "01-language",
+     "key": "01-language|Read:Notes section 2 + examples/value_vs_reference.cpp + examples/overflow.cpp"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-28",
+   "entries": [
+    {
+     "label": "LC 7 Reverse Integer",
+     "minutes": 40,
+     "module": "01-language",
+     "key": "01-language|https://leetcode.com/problems/reverse-integer/"
+    },
+    {
+     "label": "LC 1822 Sign of the Product of an Array",
+     "minutes": 20,
+     "module": "01-language",
+     "key": "01-language|https://leetcode.com/problems/sign-of-the-product-of-an-array/"
+    },
+    {
+     "label": "Read: Notes section 3 + examples/stl_tour.cpp + examples/comparators.cpp",
+     "minutes": 60,
+     "module": "01-language",
+     "key": "01-language|Read:Notes section 3 + examples/stl_tour.cpp + examples/comparators.cpp"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-29",
+   "entries": [
+    {
+     "label": "LC 217 Contains Duplicate",
+     "minutes": 20,
+     "module": "01-language",
+     "key": "01-language|https://leetcode.com/problems/contains-duplicate/"
+    },
+    {
+     "label": "LC 242 Valid Anagram",
+     "minutes": 20,
+     "module": "01-language",
+     "key": "01-language|https://leetcode.com/problems/valid-anagram/"
+    },
+    {
+     "label": "LC 1636 Sort Array by Increasing Frequency 📖",
+     "minutes": 15,
+     "module": "01-language",
+     "key": "01-language|https://leetcode.com/problems/sort-array-by-increasing-frequency/"
+    },
+    {
+     "label": "LC 1768 Merge Strings Alternately",
+     "minutes": 20,
+     "module": "01-language",
+     "key": "01-language|https://leetcode.com/problems/merge-strings-alternately/"
+    },
+    {
+     "label": "Read: Notes section 4 + examples/fast_io.cpp (the stdin template OAs expect)",
+     "minutes": 45,
+     "module": "01-language",
+     "key": "01-language|Read:Notes section 4 + examples/fast_io.cpp (the stdin template OAs expect)"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-30",
+   "entries": [
+    {
+     "label": "Drill: Type the LeetCode skeleton and the stdin template from memory until each takes under 2 minutes",
+     "minutes": 30,
+     "module": "01-language",
+     "key": "01-language|Drill:Type the LeetCode skeleton and the stdin template from memory until each takes under 2 minutes"
+    },
+    {
+     "label": "Read: Notes section 1: the four-question triage + the master pattern table",
+     "minutes": 30,
+     "module": "02-patterns",
+     "key": "02-patterns|Read:Notes section 1: the four-question triage + the master pattern table"
+    },
+    {
+     "label": "Drill: Classification drill A: the 15 statements in Notes section 1 → pattern + one-line reason (answers are hidden there)",
+     "minutes": 30,
+     "module": "02-patterns",
+     "key": "02-patterns|Drill:Classification drill A: the 15 statements in Notes section 1 → pattern + one-line reason (answers are hidden there)"
+    },
+    {
+     "label": "Read: Notes section 2: the four skeletons, each with one traced example",
+     "minutes": 45,
+     "module": "02-patterns",
+     "key": "02-patterns|Read:Notes section 2: the four skeletons, each with one traced example"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-01",
+   "entries": [
+    {
+     "label": "LC 125 Valid Palindrome",
+     "minutes": 20,
+     "module": "02-patterns",
+     "key": "02-patterns|https://leetcode.com/problems/valid-palindrome/"
+    },
+    {
+     "label": "LC 643 Maximum Average Subarray I",
+     "minutes": 20,
+     "module": "02-patterns",
+     "key": "02-patterns|https://leetcode.com/problems/maximum-average-subarray-i/"
+    },
+    {
+     "label": "LC 69 Sqrt(x)",
+     "minutes": 20,
+     "module": "02-patterns",
+     "key": "02-patterns|https://leetcode.com/problems/sqrtx/"
+    },
+    {
+     "label": "Read: Notes section 3: BFS, backtracking and memo → table skeletons",
+     "minutes": 45,
+     "module": "02-patterns",
+     "key": "02-patterns|Read:Notes section 3: BFS, backtracking and memo → table skeletons"
+    },
+    {
+     "label": "LC 70 Climbing Stairs",
+     "minutes": 20,
+     "module": "02-patterns",
+     "key": "02-patterns|https://leetcode.com/problems/climbing-stairs/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-02",
+   "entries": [
+    {
+     "label": "Read: Notes section 4: constraint → complexity table + signal words",
+     "minutes": 30,
+     "module": "02-patterns",
+     "key": "02-patterns|Read:Notes section 4: constraint → complexity table + signal words"
+    },
+    {
+     "label": "Drill: Classification drill B: 15 more statements, deciding from the constraints alone",
+     "minutes": 30,
+     "module": "02-patterns",
+     "key": "02-patterns|Drill:Classification drill B: 15 more statements, deciding from the constraints alone"
+    },
+    {
+     "label": "Read: Notes section 1 + examples/amortized_vector.cpp",
+     "minutes": 45,
+     "module": "03-complexity",
+     "key": "03-complexity|Read:Notes section 1 + examples/amortized_vector.cpp"
+    },
+    {
+     "label": "Drill: Analyze snippets 1–8 in Notes section 1 before opening the answers",
+     "minutes": 30,
+     "module": "03-complexity",
+     "key": "03-complexity|Drill:Analyze snippets 1–8 in Notes section 1 before opening the answers"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-03",
+   "entries": [
+    {
+     "label": "Read: Notes section 2",
+     "minutes": 45,
+     "module": "03-complexity",
+     "key": "03-complexity|Read:Notes section 2"
+    },
+    {
+     "label": "LC 509 Fibonacci Number 📖",
+     "minutes": 15,
+     "module": "03-complexity",
+     "key": "03-complexity|https://leetcode.com/problems/fibonacci-number/"
+    },
+    {
+     "label": "Drill: Solve recurrences 1–8 in Notes section 2 (master theorem or recursion tree)",
+     "minutes": 30,
+     "module": "03-complexity",
+     "key": "03-complexity|Drill:Solve recurrences 1–8 in Notes section 2 (master theorem or recursion tree)"
+    },
+    {
+     "label": "Read: Notes section 3",
+     "minutes": 30,
+     "module": "03-complexity",
+     "key": "03-complexity|Read:Notes section 3"
+    },
+    {
+     "label": "Read: Notes section 4: the n → complexity table",
+     "minutes": 30,
+     "module": "03-complexity",
+     "key": "03-complexity|Read:Notes section 4: the n → complexity table"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-04",
+   "entries": [
+    {
+     "label": "Weekly review: redo #redo items, re-solve 2 📖 from memory, 10-min pattern drill",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 2006 Count Number of Pairs With Absolute Dif…",
+     "minutes": 20,
+     "module": "03-complexity",
+     "key": "03-complexity|https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/"
+    },
+    {
+     "label": "LC 2367 Number of Arithmetic Triplets",
+     "minutes": 20,
+     "module": "03-complexity",
+     "key": "03-complexity|https://leetcode.com/problems/number-of-arithmetic-triplets/"
+    },
+    {
+     "label": "Drill: Ten constraint blocks in Notes section 4: write the target complexity + a candidate technique for each",
+     "minutes": 20,
+     "module": "03-complexity",
+     "key": "03-complexity|Drill:Ten constraint blocks in Notes section 4: write the target complexity + a candidate technique for each"
+    },
+    {
+     "label": "Read: Notes section 1",
+     "minutes": 45,
+     "module": "04-arrays-strings",
+     "key": "04-arrays-strings|Read:Notes section 1"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-05",
+   "entries": [
+    {
+     "label": "LC 283 Move Zeroes",
+     "minutes": 20,
+     "module": "04-arrays-strings",
+     "key": "04-arrays-strings|https://leetcode.com/problems/move-zeroes/"
+    },
+    {
+     "label": "LC 189 Rotate Array 📖",
+     "minutes": 25,
+     "module": "04-arrays-strings",
+     "key": "04-arrays-strings|https://leetcode.com/problems/rotate-array/"
+    },
+    {
+     "label": "LC 75 Sort Colors 📖",
+     "minutes": 25,
+     "module": "04-arrays-strings",
+     "key": "04-arrays-strings|https://leetcode.com/problems/sort-colors/"
+    },
+    {
+     "label": "LC 31 Next Permutation",
+     "minutes": 40,
+     "module": "04-arrays-strings",
+     "key": "04-arrays-strings|https://leetcode.com/problems/next-permutation/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-06",
+   "entries": [
+    {
+     "label": "Read: Notes section 2",
+     "minutes": 45,
+     "module": "04-arrays-strings",
+     "key": "04-arrays-strings|Read:Notes section 2"
+    },
+    {
+     "label": "LC 54 Spiral Matrix 📖",
+     "minutes": 25,
+     "module": "04-arrays-strings",
+     "key": "04-arrays-strings|https://leetcode.com/problems/spiral-matrix/"
+    },
+    {
+     "label": "LC 48 Rotate Image 📖",
+     "minutes": 25,
+     "module": "04-arrays-strings",
+     "key": "04-arrays-strings|https://leetcode.com/problems/rotate-image/"
+    },
+    {
+     "label": "LC 73 Set Matrix Zeroes",
+     "minutes": 40,
+     "module": "04-arrays-strings",
+     "key": "04-arrays-strings|https://leetcode.com/problems/set-matrix-zeroes/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-07",
+   "entries": [
+    {
+     "label": "Read: Notes section 3",
+     "minutes": 45,
+     "module": "04-arrays-strings",
+     "key": "04-arrays-strings|Read:Notes section 3"
+    },
+    {
+     "label": "LC 680 Valid Palindrome II",
+     "minutes": 20,
+     "module": "04-arrays-strings",
+     "key": "04-arrays-strings|https://leetcode.com/problems/valid-palindrome-ii/"
+    },
+    {
+     "label": "LC 151 Reverse Words in a String",
+     "minutes": 40,
+     "module": "04-arrays-strings",
+     "key": "04-arrays-strings|https://leetcode.com/problems/reverse-words-in-a-string/"
+    },
+    {
+     "label": "LC 5 Longest Palindromic Substring 📖",
+     "minutes": 25,
+     "module": "04-arrays-strings",
+     "key": "04-arrays-strings|https://leetcode.com/problems/longest-palindromic-substring/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-08",
+   "entries": [
+    {
+     "label": "Read: Notes section 4: counting subarrays, Kadane",
+     "minutes": 45,
+     "module": "04-arrays-strings",
+     "key": "04-arrays-strings|Read:Notes section 4: counting subarrays, Kadane"
+    },
+    {
+     "label": "LC 53 Maximum Subarray 📖",
+     "minutes": 25,
+     "module": "04-arrays-strings",
+     "key": "04-arrays-strings|https://leetcode.com/problems/maximum-subarray/"
+    },
+    {
+     "label": "LC 152 Maximum Product Subarray",
+     "minutes": 40,
+     "module": "04-arrays-strings",
+     "key": "04-arrays-strings|https://leetcode.com/problems/maximum-product-subarray/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "entries": [
+    {
+     "label": "Read: Notes section 1 + templates/sorting.hpp (merge, quick, heap)",
+     "minutes": 60,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|Read:Notes section 1 + templates/sorting.hpp (merge, quick, heap)"
+    },
+    {
+     "label": "LC 912 Sort an Array 📖",
+     "minutes": 25,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|https://leetcode.com/problems/sort-an-array/"
+    },
+    {
+     "label": "LC 88 Merge Sorted Array",
+     "minutes": 20,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|https://leetcode.com/problems/merge-sorted-array/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-10",
+   "entries": [
+    {
+     "label": "LC 493 Reverse Pairs",
+     "minutes": 60,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|https://leetcode.com/problems/reverse-pairs/"
+    },
+    {
+     "label": "Read: Notes section 2 + templates/sorting.hpp (counting, radix)",
+     "minutes": 45,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|Read:Notes section 2 + templates/sorting.hpp (counting, radix)"
+    },
+    {
+     "label": "LC 1122 Relative Sort Array",
+     "minutes": 20,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|https://leetcode.com/problems/relative-sort-array/"
+    },
+    {
+     "label": "LC 451 Sort Characters By Frequency",
+     "minutes": 40,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|https://leetcode.com/problems/sort-characters-by-frequency/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-11",
+   "entries": [
+    {
+     "label": "Weekly review: redo #redo items, re-solve 2 📖 from memory, 10-min pattern drill",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "Read: Notes section 3",
+     "minutes": 30,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|Read:Notes section 3"
+    },
+    {
+     "label": "LC 179 Largest Number 📖",
+     "minutes": 25,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|https://leetcode.com/problems/largest-number/"
+    },
+    {
+     "label": "LC 973 K Closest Points to Origin",
+     "minutes": 40,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|https://leetcode.com/problems/k-closest-points-to-origin/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-12",
+   "entries": [
+    {
+     "label": "Read: Notes section 4 + templates/binary_search.hpp",
+     "minutes": 45,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|Read:Notes section 4 + templates/binary_search.hpp"
+    },
+    {
+     "label": "LC 704 Binary Search",
+     "minutes": 20,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|https://leetcode.com/problems/binary-search/"
+    },
+    {
+     "label": "LC 34 Find First and Last Position of Element… 📖",
+     "minutes": 25,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/"
+    },
+    {
+     "label": "LC 33 Search in Rotated Sorted Array",
+     "minutes": 40,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|https://leetcode.com/problems/search-in-rotated-sorted-array/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-13",
+   "entries": [
+    {
+     "label": "LC 153 Find Minimum in Rotated Sorted Array",
+     "minutes": 40,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"
+    },
+    {
+     "label": "LC 81 Search in Rotated Sorted Array II",
+     "minutes": 40,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|https://leetcode.com/problems/search-in-rotated-sorted-array-ii/"
+    },
+    {
+     "label": "LC 162 Find Peak Element",
+     "minutes": 40,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|https://leetcode.com/problems/find-peak-element/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-14",
+   "entries": [
+    {
+     "label": "LC 540 Single Element in a Sorted Array",
+     "minutes": 40,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|https://leetcode.com/problems/single-element-in-a-sorted-array/"
+    },
+    {
+     "label": "LC 240 Search a 2D Matrix II",
+     "minutes": 40,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|https://leetcode.com/problems/search-a-2d-matrix-ii/"
+    },
+    {
+     "label": "LC 1901 Find a Peak Element II",
+     "minutes": 40,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|https://leetcode.com/problems/find-a-peak-element-ii/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-15",
+   "entries": [
+    {
+     "label": "LC 4 Median of Two Sorted Arrays",
+     "minutes": 60,
+     "module": "05-searching-sorting",
+     "key": "05-searching-sorting|https://leetcode.com/problems/median-of-two-sorted-arrays/"
+    },
+    {
+     "label": "Read: Notes section 1",
+     "minutes": 45,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|Read:Notes section 1"
+    },
+    {
+     "label": "LC 167 Two Sum II - Input Array Is Sorted 📖",
+     "minutes": 25,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "entries": [
+    {
+     "label": "LC 11 Container With Most Water",
+     "minutes": 40,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/container-with-most-water/"
+    },
+    {
+     "label": "LC 15 3Sum 📖",
+     "minutes": 25,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/3sum/"
+    },
+    {
+     "label": "LC 18 4Sum",
+     "minutes": 40,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/4sum/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-17",
+   "entries": [
+    {
+     "label": "LC 42 Trapping Rain Water",
+     "minutes": 60,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/trapping-rain-water/"
+    },
+    {
+     "label": "Read: Notes section 2: fixed, longest, shortest, and count-subarrays windows",
+     "minutes": 60,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|Read:Notes section 2: fixed, longest, shortest, and count-subarrays windows"
+    },
+    {
+     "label": "LC 3 Longest Substring Without Repeating Cha… 📖",
+     "minutes": 25,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-18",
+   "entries": [
+    {
+     "label": "Weekly review: redo #redo items, re-solve 2 📖 from memory, 10-min pattern drill",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 1423 Maximum Points You Can Obtain from Cards",
+     "minutes": 40,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/"
+    },
+    {
+     "label": "LC 1004 Max Consecutive Ones III",
+     "minutes": 40,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/max-consecutive-ones-iii/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-19",
+   "entries": [
+    {
+     "label": "LC 424 Longest Repeating Character Replacement",
+     "minutes": 40,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/longest-repeating-character-replacement/"
+    },
+    {
+     "label": "LC 340 Longest Substring with At Most K Distin…",
+     "minutes": 40,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/"
+    },
+    {
+     "label": "LC 1358 Number of Substrings Containing All Thr…",
+     "minutes": 40,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "entries": [
+    {
+     "label": "LC 930 Binary Subarrays With Sum",
+     "minutes": 40,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/binary-subarrays-with-sum/"
+    },
+    {
+     "label": "LC 1248 Count Number of Nice Subarrays",
+     "minutes": 40,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/count-number-of-nice-subarrays/"
+    },
+    {
+     "label": "LC 76 Minimum Window Substring 📖",
+     "minutes": 35,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/minimum-window-substring/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-21",
+   "entries": [
+    {
+     "label": "Read: Notes section 3",
+     "minutes": 45,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|Read:Notes section 3"
+    },
+    {
+     "label": "LC 303 Range Sum Query - Immutable",
+     "minutes": 20,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/range-sum-query-immutable/"
+    },
+    {
+     "label": "LC 238 Product of Array Except Self 📖",
+     "minutes": 25,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/product-of-array-except-self/"
+    },
+    {
+     "label": "LC 304 Range Sum Query 2D - Immutable",
+     "minutes": 40,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/range-sum-query-2d-immutable/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "entries": [
+    {
+     "label": "Read: Notes section 4",
+     "minutes": 45,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|Read:Notes section 4"
+    },
+    {
+     "label": "LC 1109 Corporate Flight Bookings 📖",
+     "minutes": 25,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/corporate-flight-bookings/"
+    },
+    {
+     "label": "LC 1094 Car Pooling",
+     "minutes": 40,
+     "module": "06-two-pointers-window-prefix",
+     "key": "06-two-pointers-window-prefix|https://leetcode.com/problems/car-pooling/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-23",
+   "entries": [
+    {
+     "label": "Read: Notes section 1",
+     "minutes": 45,
+     "module": "07-hashing",
+     "key": "07-hashing|Read:Notes section 1"
+    },
+    {
+     "label": "LC 1 Two Sum 📖",
+     "minutes": 15,
+     "module": "07-hashing",
+     "key": "07-hashing|https://leetcode.com/problems/two-sum/"
+    },
+    {
+     "label": "LC 169 Majority Element",
+     "minutes": 20,
+     "module": "07-hashing",
+     "key": "07-hashing|https://leetcode.com/problems/majority-element/"
+    },
+    {
+     "label": "LC 229 Majority Element II",
+     "minutes": 40,
+     "module": "07-hashing",
+     "key": "07-hashing|https://leetcode.com/problems/majority-element-ii/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-24",
+   "entries": [
+    {
+     "label": "LC 49 Group Anagrams 📖",
+     "minutes": 25,
+     "module": "07-hashing",
+     "key": "07-hashing|https://leetcode.com/problems/group-anagrams/"
+    },
+    {
+     "label": "LC 128 Longest Consecutive Sequence",
+     "minutes": 40,
+     "module": "07-hashing",
+     "key": "07-hashing|https://leetcode.com/problems/longest-consecutive-sequence/"
+    },
+    {
+     "label": "Read: Notes section 2 + examples/hashmap_chaining.cpp",
+     "minutes": 45,
+     "module": "07-hashing",
+     "key": "07-hashing|Read:Notes section 2 + examples/hashmap_chaining.cpp"
+    },
+    {
+     "label": "LC 706 Design HashMap 📖",
+     "minutes": 15,
+     "module": "07-hashing",
+     "key": "07-hashing|https://leetcode.com/problems/design-hashmap/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-25",
+   "entries": [
+    {
+     "label": "Weekly review: redo #redo items, re-solve 2 📖 from memory, 10-min pattern drill",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "Read: Notes section 3: pair keys, custom hash, coordinate encoding, splitmix64",
+     "minutes": 45,
+     "module": "07-hashing",
+     "key": "07-hashing|Read:Notes section 3: pair keys, custom hash, coordinate encoding, splitmix64"
+    },
+    {
+     "label": "LC 36 Valid Sudoku",
+     "minutes": 40,
+     "module": "07-hashing",
+     "key": "07-hashing|https://leetcode.com/problems/valid-sudoku/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "entries": [
+    {
+     "label": "Read: Notes section 4",
+     "minutes": 45,
+     "module": "07-hashing",
+     "key": "07-hashing|Read:Notes section 4"
+    },
+    {
+     "label": "LC 560 Subarray Sum Equals K 📖",
+     "minutes": 25,
+     "module": "07-hashing",
+     "key": "07-hashing|https://leetcode.com/problems/subarray-sum-equals-k/"
+    },
+    {
+     "label": "LC 325 Maximum Size Subarray Sum Equals k",
+     "minutes": 40,
+     "module": "07-hashing",
+     "key": "07-hashing|https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "entries": [
+    {
+     "label": "LC 525 Contiguous Array",
+     "minutes": 40,
+     "module": "07-hashing",
+     "key": "07-hashing|https://leetcode.com/problems/contiguous-array/"
+    },
+    {
+     "label": "LC 974 Subarray Sums Divisible by K",
+     "minutes": 40,
+     "module": "07-hashing",
+     "key": "07-hashing|https://leetcode.com/problems/subarray-sums-divisible-by-k/"
+    },
+    {
+     "label": "Read: Notes section 1",
+     "minutes": 45,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|Read:Notes section 1"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "entries": [
+    {
+     "label": "LC 206 Reverse Linked List 📖",
+     "minutes": 15,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|https://leetcode.com/problems/reverse-linked-list/"
+    },
+    {
+     "label": "LC 2 Add Two Numbers",
+     "minutes": 40,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|https://leetcode.com/problems/add-two-numbers/"
+    },
+    {
+     "label": "LC 61 Rotate List",
+     "minutes": 40,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|https://leetcode.com/problems/rotate-list/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "entries": [
+    {
+     "label": "LC 25 Reverse Nodes in k-Group",
+     "minutes": 60,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|https://leetcode.com/problems/reverse-nodes-in-k-group/"
+    },
+    {
+     "label": "Read: Notes section 2",
+     "minutes": 45,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|Read:Notes section 2"
+    },
+    {
+     "label": "LC 876 Middle of the Linked List",
+     "minutes": 20,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|https://leetcode.com/problems/middle-of-the-linked-list/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-30",
+   "entries": [
+    {
+     "label": "LC 141 Linked List Cycle",
+     "minutes": 20,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|https://leetcode.com/problems/linked-list-cycle/"
+    },
+    {
+     "label": "LC 142 Linked List Cycle II 📖",
+     "minutes": 25,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|https://leetcode.com/problems/linked-list-cycle-ii/"
+    },
+    {
+     "label": "LC 160 Intersection of Two Linked Lists",
+     "minutes": 20,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|https://leetcode.com/problems/intersection-of-two-linked-lists/"
+    },
+    {
+     "label": "LC 234 Palindrome Linked List",
+     "minutes": 20,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|https://leetcode.com/problems/palindrome-linked-list/"
+    },
+    {
+     "label": "LC 19 Remove Nth Node From End of List",
+     "minutes": 40,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-31",
+   "entries": [
+    {
+     "label": "Timed mock round (`/mock`) + post-mortem",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "Read: Notes section 3",
+     "minutes": 30,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|Read:Notes section 3"
+    },
+    {
+     "label": "LC 21 Merge Two Sorted Lists",
+     "minutes": 20,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|https://leetcode.com/problems/merge-two-sorted-lists/"
+    },
+    {
+     "label": "LC 148 Sort List",
+     "minutes": 40,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|https://leetcode.com/problems/sort-list/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-01",
+   "entries": [
+    {
+     "label": "Weekly review: redo #redo items, re-solve 2 📖 from memory, 10-min pattern drill",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 23 Merge k Sorted Lists 📖",
+     "minutes": 35,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|https://leetcode.com/problems/merge-k-sorted-lists/"
+    },
+    {
+     "label": "Read: Notes section 4: `std::list` + `unordered_map<key, iterator>`, splice, skip lists",
+     "minutes": 45,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|Read:Notes section 4: `std::list` + `unordered_map<key, iterator>`, splice, skip lists"
+    },
+    {
+     "label": "LC 146 LRU Cache 📖",
+     "minutes": 25,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|https://leetcode.com/problems/lru-cache/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-02",
+   "entries": [
+    {
+     "label": "LC 138 Copy List with Random Pointer",
+     "minutes": 40,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|https://leetcode.com/problems/copy-list-with-random-pointer/"
+    },
+    {
+     "label": "LC 460 LFU Cache",
+     "minutes": 60,
+     "module": "08-linked-lists",
+     "key": "08-linked-lists|https://leetcode.com/problems/lfu-cache/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "entries": [
+    {
+     "label": "Read: Notes section 1",
+     "minutes": 45,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|Read:Notes section 1"
+    },
+    {
+     "label": "LC 20 Valid Parentheses 📖",
+     "minutes": 15,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/valid-parentheses/"
+    },
+    {
+     "label": "LC 150 Evaluate Reverse Polish Notation",
+     "minutes": 40,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/evaluate-reverse-polish-notation/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "entries": [
+    {
+     "label": "LC 227 Basic Calculator II",
+     "minutes": 40,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/basic-calculator-ii/"
+    },
+    {
+     "label": "LC 155 Min Stack",
+     "minutes": 40,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/min-stack/"
+    },
+    {
+     "label": "LC 735 Asteroid Collision",
+     "minutes": 40,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/asteroid-collision/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-05",
+   "entries": [
+    {
+     "label": "LC 277 Find the Celebrity",
+     "minutes": 40,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/find-the-celebrity/"
+    },
+    {
+     "label": "Read: Notes section 2",
+     "minutes": 60,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|Read:Notes section 2"
+    },
+    {
+     "label": "LC 739 Daily Temperatures 📖",
+     "minutes": 25,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/daily-temperatures/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-06",
+   "entries": [
+    {
+     "label": "LC 496 Next Greater Element I",
+     "minutes": 20,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/next-greater-element-i/"
+    },
+    {
+     "label": "LC 503 Next Greater Element II",
+     "minutes": 40,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/next-greater-element-ii/"
+    },
+    {
+     "label": "LC 901 Online Stock Span",
+     "minutes": 40,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/online-stock-span/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-07",
+   "entries": [
+    {
+     "label": "Timed mock round (`/mock`) + post-mortem",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 907 Sum of Subarray Minimums",
+     "minutes": 40,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/sum-of-subarray-minimums/"
+    },
+    {
+     "label": "LC 2104 Sum of Subarray Ranges",
+     "minutes": 40,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/sum-of-subarray-ranges/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-08",
+   "entries": [
+    {
+     "label": "Rest day",
+     "minutes": 0,
+     "module": "",
+     "key": null
+    }
+   ]
+  },
+  {
+   "date": "2026-11-09",
+   "entries": [
+    {
+     "label": "LC 402 Remove K Digits",
+     "minutes": 40,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/remove-k-digits/"
+    },
+    {
+     "label": "LC 84 Largest Rectangle in Histogram 📖",
+     "minutes": 35,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/largest-rectangle-in-histogram/"
+    },
+    {
+     "label": "LC 85 Maximal Rectangle",
+     "minutes": 60,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/maximal-rectangle/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "entries": [
+    {
+     "label": "Read: Notes section 3: ring buffers, rate limiters, a blocking queue with mutex + condition_variable",
+     "minutes": 45,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|Read:Notes section 3: ring buffers, rate limiters, a blocking queue with mutex + condition_variable"
+    },
+    {
+     "label": "LC 622 Design Circular Queue 📖",
+     "minutes": 25,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/design-circular-queue/"
+    },
+    {
+     "label": "LC 933 Number of Recent Calls",
+     "minutes": 20,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/number-of-recent-calls/"
+    },
+    {
+     "label": "Read: Notes section 4",
+     "minutes": 45,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|Read:Notes section 4"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "entries": [
+    {
+     "label": "LC 239 Sliding Window Maximum 📖",
+     "minutes": 35,
+     "module": "09-stacks-queues-deque",
+     "key": "09-stacks-queues-deque|https://leetcode.com/problems/sliding-window-maximum/"
+    },
+    {
+     "label": "Read: Notes section 1",
+     "minutes": 45,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|Read:Notes section 1"
+    },
+    {
+     "label": "LC 50 Pow(x, n) 📖",
+     "minutes": 25,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|https://leetcode.com/problems/powx-n/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "entries": [
+    {
+     "label": "Read: Notes section 2: the subsets, combinations and permutations templates; handling duplicates",
+     "minutes": 60,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|Read:Notes section 2: the subsets, combinations and permutations templates; handling duplicates"
+    },
+    {
+     "label": "LC 78 Subsets 📖",
+     "minutes": 25,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|https://leetcode.com/problems/subsets/"
+    },
+    {
+     "label": "LC 90 Subsets II",
+     "minutes": 40,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|https://leetcode.com/problems/subsets-ii/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-13",
+   "entries": [
+    {
+     "label": "LC 46 Permutations 📖",
+     "minutes": 25,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|https://leetcode.com/problems/permutations/"
+    },
+    {
+     "label": "LC 22 Generate Parentheses",
+     "minutes": 40,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|https://leetcode.com/problems/generate-parentheses/"
+    },
+    {
+     "label": "LC 17 Letter Combinations of a Phone Number",
+     "minutes": 40,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|https://leetcode.com/problems/letter-combinations-of-a-phone-number/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-14",
+   "entries": [
+    {
+     "label": "Timed mock round (`/mock`) + post-mortem",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 39 Combination Sum",
+     "minutes": 40,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|https://leetcode.com/problems/combination-sum/"
+    },
+    {
+     "label": "LC 40 Combination Sum II",
+     "minutes": 40,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|https://leetcode.com/problems/combination-sum-ii/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-15",
+   "entries": [
+    {
+     "label": "Weekly review: redo #redo items, re-solve 2 📖 from memory, 10-min pattern drill",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 131 Palindrome Partitioning",
+     "minutes": 40,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|https://leetcode.com/problems/palindrome-partitioning/"
+    },
+    {
+     "label": "Read: Notes section 3",
+     "minutes": 45,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|Read:Notes section 3"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-16",
+   "entries": [
+    {
+     "label": "LC 79 Word Search",
+     "minutes": 40,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|https://leetcode.com/problems/word-search/"
+    },
+    {
+     "label": "LC 1219 Path with Maximum Gold",
+     "minutes": 40,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|https://leetcode.com/problems/path-with-maximum-gold/"
+    },
+    {
+     "label": "LC 51 N-Queens 📖",
+     "minutes": 35,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|https://leetcode.com/problems/n-queens/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-17",
+   "entries": [
+    {
+     "label": "LC 37 Sudoku Solver",
+     "minutes": 60,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|https://leetcode.com/problems/sudoku-solver/"
+    },
+    {
+     "label": "Read: Notes section 4",
+     "minutes": 30,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|Read:Notes section 4"
+    },
+    {
+     "label": "LC 698 Partition to K Equal Sum Subsets 📖",
+     "minutes": 25,
+     "module": "10-recursion-backtracking",
+     "key": "10-recursion-backtracking|https://leetcode.com/problems/partition-to-k-equal-sum-subsets/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "entries": [
+    {
+     "label": "Read: Notes section 1 (uses templates/binary_search.hpp)",
+     "minutes": 45,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|Read:Notes section 1 (uses templates/binary_search.hpp)"
+    },
+    {
+     "label": "LC 875 Koko Eating Bananas 📖",
+     "minutes": 25,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|https://leetcode.com/problems/koko-eating-bananas/"
+    },
+    {
+     "label": "LC 1552 Magnetic Force Between Two Balls",
+     "minutes": 40,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|https://leetcode.com/problems/magnetic-force-between-two-balls/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-19",
+   "entries": [
+    {
+     "label": "LC 410 Split Array Largest Sum",
+     "minutes": 60,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|https://leetcode.com/problems/split-array-largest-sum/"
+    },
+    {
+     "label": "LC 2387 Median of a Row Wise Sorted Matrix",
+     "minutes": 40,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-20",
+   "entries": [
+    {
+     "label": "LC 378 Kth Smallest Element in a Sorted Matrix",
+     "minutes": 40,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/"
+    },
+    {
+     "label": "Read: Notes section 2: exchange argument, stays-ahead, and counterexamples where greedy fails",
+     "minutes": 60,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|Read:Notes section 2: exchange argument, stays-ahead, and counterexamples where greedy fails"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-21",
+   "entries": [
+    {
+     "label": "Timed mock round (`/mock`) + post-mortem",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 55 Jump Game",
+     "minutes": 40,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|https://leetcode.com/problems/jump-game/"
+    },
+    {
+     "label": "LC 678 Valid Parenthesis String",
+     "minutes": 40,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|https://leetcode.com/problems/valid-parenthesis-string/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-22",
+   "entries": [
+    {
+     "label": "Weekly review: redo #redo items, re-solve 2 📖 from memory, 10-min pattern drill",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 135 Candy",
+     "minutes": 60,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|https://leetcode.com/problems/candy/"
+    },
+    {
+     "label": "Read: Notes section 3",
+     "minutes": 45,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|Read:Notes section 3"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-23",
+   "entries": [
+    {
+     "label": "LC 56 Merge Intervals 📖",
+     "minutes": 25,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|https://leetcode.com/problems/merge-intervals/"
+    },
+    {
+     "label": "LC 57 Insert Interval",
+     "minutes": 40,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|https://leetcode.com/problems/insert-interval/"
+    },
+    {
+     "label": "LC 435 Non-overlapping Intervals",
+     "minutes": 40,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|https://leetcode.com/problems/non-overlapping-intervals/"
+    },
+    {
+     "label": "LC 2406 Divide Intervals Into Minimum Number of… 📖",
+     "minutes": 25,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "entries": [
+    {
+     "label": "Read: Notes section 4",
+     "minutes": 30,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|Read:Notes section 4"
+    },
+    {
+     "label": "LC 1011 Capacity To Ship Packages Within D Days",
+     "minutes": 40,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/"
+    },
+    {
+     "label": "LC 1353 Maximum Number of Events That Can Be At…",
+     "minutes": 40,
+     "module": "11-binary-search-greedy-intervals",
+     "key": "11-binary-search-greedy-intervals|https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "entries": [
+    {
+     "label": "Read: Notes section 1: recursive, iterative (explicit stack), Morris, level order",
+     "minutes": 60,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|Read:Notes section 1: recursive, iterative (explicit stack), Morris, level order"
+    },
+    {
+     "label": "LC 94 Binary Tree Inorder Traversal 📖",
+     "minutes": 15,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/binary-tree-inorder-traversal/"
+    },
+    {
+     "label": "LC 144 Binary Tree Preorder Traversal",
+     "minutes": 20,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/binary-tree-preorder-traversal/"
+    },
+    {
+     "label": "LC 102 Binary Tree Level Order Traversal",
+     "minutes": 40,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/binary-tree-level-order-traversal/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "entries": [
+    {
+     "label": "LC 199 Binary Tree Right Side View",
+     "minutes": 40,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/binary-tree-right-side-view/"
+    },
+    {
+     "label": "LC 662 Maximum Width of Binary Tree",
+     "minutes": 40,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/maximum-width-of-binary-tree/"
+    },
+    {
+     "label": "LC 105 Construct Binary Tree from Preorder and… 📖",
+     "minutes": 25,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "entries": [
+    {
+     "label": "LC 545 Boundary of Binary Tree",
+     "minutes": 40,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/boundary-of-binary-tree/"
+    },
+    {
+     "label": "LC 987 Vertical Order Traversal of a Binary Tr…",
+     "minutes": 60,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-28",
+   "entries": [
+    {
+     "label": "Timed mock round (`/mock`) + post-mortem",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 297 Serialize and Deserialize Binary Tree",
+     "minutes": 60,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/serialize-and-deserialize-binary-tree/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-29",
+   "entries": [
+    {
+     "label": "Weekly review: redo #redo items, re-solve 2 📖 from memory, 10-min pattern drill",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "Read: Notes section 2: return a value vs update a global, post-order combining",
+     "minutes": 60,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|Read:Notes section 2: return a value vs update a global, post-order combining"
+    },
+    {
+     "label": "LC 104 Maximum Depth of Binary Tree",
+     "minutes": 20,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+    },
+    {
+     "label": "LC 543 Diameter of Binary Tree 📖",
+     "minutes": 15,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/diameter-of-binary-tree/"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-30",
+   "entries": [
+    {
+     "label": "LC 257 Binary Tree Paths",
+     "minutes": 20,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/binary-tree-paths/"
+    },
+    {
+     "label": "LC 236 Lowest Common Ancestor of a Binary Tree 📖",
+     "minutes": 25,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"
+    },
+    {
+     "label": "LC 863 All Nodes Distance K in Binary Tree",
+     "minutes": 40,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/"
+    },
+    {
+     "label": "LC 2385 Amount of Time for Binary Tree to Be In…",
+     "minutes": 40,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-01",
+   "entries": [
+    {
+     "label": "LC 124 Binary Tree Maximum Path Sum",
+     "minutes": 60,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/binary-tree-maximum-path-sum/"
+    },
+    {
+     "label": "Read: Notes section 3",
+     "minutes": 45,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|Read:Notes section 3"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-02",
+   "entries": [
+    {
+     "label": "LC 701 Insert into a Binary Search Tree",
+     "minutes": 40,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/insert-into-a-binary-search-tree/"
+    },
+    {
+     "label": "LC 450 Delete Node in a BST 📖",
+     "minutes": 25,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/delete-node-in-a-bst/"
+    },
+    {
+     "label": "LC 98 Validate Binary Search Tree",
+     "minutes": 40,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/validate-binary-search-tree/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-03",
+   "entries": [
+    {
+     "label": "LC 230 Kth Smallest Element in a BST",
+     "minutes": 40,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/kth-smallest-element-in-a-bst/"
+    },
+    {
+     "label": "LC 235 Lowest Common Ancestor of a Binary Sear…",
+     "minutes": 40,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/"
+    },
+    {
+     "label": "LC 285 Inorder Successor in BST",
+     "minutes": 40,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/inorder-successor-in-bst/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-04",
+   "entries": [
+    {
+     "label": "LC 1008 Construct Binary Search Tree from Preor…",
+     "minutes": 40,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/"
+    },
+    {
+     "label": "LC 653 Two Sum IV - Input is a BST",
+     "minutes": 20,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/two-sum-iv-input-is-a-bst/"
+    },
+    {
+     "label": "LC 99 Recover Binary Search Tree",
+     "minutes": 40,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/recover-binary-search-tree/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-05",
+   "entries": [
+    {
+     "label": "Timed mock round (`/mock`) + post-mortem",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 333 Largest BST Subtree",
+     "minutes": 40,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|https://leetcode.com/problems/largest-bst-subtree/"
+    },
+    {
+     "label": "Read: projects/12-file-index/README.md: spec + milestones",
+     "minutes": 30,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|Read:projects/12-file-index/README.md: spec + milestones"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-06",
+   "entries": [
+    {
+     "label": "Weekly review: redo #redo items, re-solve 2 📖 from memory, 10-min pattern drill",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "Project: Milestone 1: write the tests for the BST index first (checklist in the README), then make them pass (1/2)",
+     "minutes": 60,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|Project:Milestone 1: write the tests for the BST index first (checklist in the README), then make them pass"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-07",
+   "entries": [
+    {
+     "label": "Project: Milestone 1: write the tests for the BST index first (checklist in the README), then make them pass (2/2)",
+     "minutes": 60,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|Project:Milestone 1: write the tests for the BST index first (checklist in the README), then make them pass"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-08",
+   "entries": [
+    {
+     "label": "Project: Milestone 2: prefix autocomplete + rank / k-th / range queries using subtree sizes",
+     "minutes": 90,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|Project:Milestone 2: prefix autocomplete + rank / k-th / range queries using subtree sizes"
+    },
+    {
+     "label": "Project: Milestone 3: the CLI over a real directory, then a code review with Claude (`/review`)",
+     "minutes": 45,
+     "module": "12-trees-bst",
+     "key": "12-trees-bst|Project:Milestone 3: the CLI over a real directory, then a code review with Claude (`/review`)"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-09",
+   "entries": [
+    {
+     "label": "Read: Notes section 1 + templates/heap.hpp (a binary heap you can read end to end)",
+     "minutes": 45,
+     "module": "13-heaps-tries",
+     "key": "13-heaps-tries|Read:Notes section 1 + templates/heap.hpp (a binary heap you can read end to end)"
+    },
+    {
+     "label": "LC 703 Kth Largest Element in a Stream 📖",
+     "minutes": 15,
+     "module": "13-heaps-tries",
+     "key": "13-heaps-tries|https://leetcode.com/problems/kth-largest-element-in-a-stream/"
+    },
+    {
+     "label": "LC 373 Find K Pairs with Smallest Sums",
+     "minutes": 40,
+     "module": "13-heaps-tries",
+     "key": "13-heaps-tries|https://leetcode.com/problems/find-k-pairs-with-smallest-sums/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-10",
+   "entries": [
+    {
+     "label": "Read: Notes section 2",
+     "minutes": 45,
+     "module": "13-heaps-tries",
+     "key": "13-heaps-tries|Read:Notes section 2"
+    },
+    {
+     "label": "LC 215 Kth Largest Element in an Array",
+     "minutes": 40,
+     "module": "13-heaps-tries",
+     "key": "13-heaps-tries|https://leetcode.com/problems/kth-largest-element-in-an-array/"
+    },
+    {
+     "label": "LC 1834 Single-Threaded CPU",
+     "minutes": 40,
+     "module": "13-heaps-tries",
+     "key": "13-heaps-tries|https://leetcode.com/problems/single-threaded-cpu/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-11",
+   "entries": [
+    {
+     "label": "LC 295 Find Median from Data Stream 📖",
+     "minutes": 35,
+     "module": "13-heaps-tries",
+     "key": "13-heaps-tries|https://leetcode.com/problems/find-median-from-data-stream/"
+    },
+    {
+     "label": "Read: Notes section 3 + templates/trie.hpp",
+     "minutes": 45,
+     "module": "13-heaps-tries",
+     "key": "13-heaps-tries|Read:Notes section 3 + templates/trie.hpp"
+    },
+    {
+     "label": "LC 208 Implement Trie (Prefix Tree) 📖",
+     "minutes": 25,
+     "module": "13-heaps-tries",
+     "key": "13-heaps-tries|https://leetcode.com/problems/implement-trie-prefix-tree/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-12",
+   "entries": [
+    {
+     "label": "Timed mock round (`/mock`) + post-mortem",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 211 Design Add and Search Words Data Struct…",
+     "minutes": 40,
+     "module": "13-heaps-tries",
+     "key": "13-heaps-tries|https://leetcode.com/problems/design-add-and-search-words-data-structure/"
+    },
+    {
+     "label": "LC 1804 Implement Trie II (Prefix Tree)",
+     "minutes": 40,
+     "module": "13-heaps-tries",
+     "key": "13-heaps-tries|https://leetcode.com/problems/implement-trie-ii-prefix-tree/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-13",
+   "entries": [
+    {
+     "label": "Weekly review: redo #redo items, re-solve 2 📖 from memory, 10-min pattern drill",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 1858 Longest Word With All Prefixes",
+     "minutes": 40,
+     "module": "13-heaps-tries",
+     "key": "13-heaps-tries|https://leetcode.com/problems/longest-word-with-all-prefixes/"
+    },
+    {
+     "label": "Read: Notes section 4",
+     "minutes": 30,
+     "module": "13-heaps-tries",
+     "key": "13-heaps-tries|Read:Notes section 4"
+    },
+    {
+     "label": "LC 1268 Search Suggestions System 📖",
+     "minutes": 25,
+     "module": "13-heaps-tries",
+     "key": "13-heaps-tries|https://leetcode.com/problems/search-suggestions-system/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-14",
+   "entries": [
+    {
+     "label": "LC 212 Word Search II",
+     "minutes": 60,
+     "module": "13-heaps-tries",
+     "key": "13-heaps-tries|https://leetcode.com/problems/word-search-ii/"
+    },
+    {
+     "label": "LC 1698 Number of Distinct Substrings in a Stri…",
+     "minutes": 40,
+     "module": "13-heaps-tries",
+     "key": "13-heaps-tries|https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-15",
+   "entries": [
+    {
+     "label": "Read: Notes section 1",
+     "minutes": 45,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|Read:Notes section 1"
+    },
+    {
+     "label": "LC 1971 Find if Path Exists in Graph",
+     "minutes": 20,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/find-if-path-exists-in-graph/"
+    },
+    {
+     "label": "LC 547 Number of Provinces",
+     "minutes": 40,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/number-of-provinces/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-16",
+   "entries": [
+    {
+     "label": "Read: Notes section 2: grids, multi-source BFS, colour-based cycle detection, bipartite",
+     "minutes": 60,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|Read:Notes section 2: grids, multi-source BFS, colour-based cycle detection, bipartite"
+    },
+    {
+     "label": "LC 733 Flood Fill",
+     "minutes": 20,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/flood-fill/"
+    },
+    {
+     "label": "LC 200 Number of Islands 📖",
+     "minutes": 25,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/number-of-islands/"
+    },
+    {
+     "label": "LC 994 Rotting Oranges 📖",
+     "minutes": 25,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/rotting-oranges/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-17",
+   "entries": [
+    {
+     "label": "LC 542 01 Matrix",
+     "minutes": 40,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/01-matrix/"
+    },
+    {
+     "label": "LC 130 Surrounded Regions",
+     "minutes": 40,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/surrounded-regions/"
+    },
+    {
+     "label": "LC 694 Number of Distinct Islands",
+     "minutes": 40,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/number-of-distinct-islands/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-18",
+   "entries": [
+    {
+     "label": "LC 785 Is Graph Bipartite?",
+     "minutes": 40,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/is-graph-bipartite/"
+    },
+    {
+     "label": "LC 127 Word Ladder",
+     "minutes": 60,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/word-ladder/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-19",
+   "entries": [
+    {
+     "label": "Timed mock round (`/mock`) + post-mortem",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 126 Word Ladder II",
+     "minutes": 60,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/word-ladder-ii/"
+    },
+    {
+     "label": "Read: Notes section 3",
+     "minutes": 45,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|Read:Notes section 3"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-20",
+   "entries": [
+    {
+     "label": "Weekly review: redo #redo items, re-solve 2 📖 from memory, 10-min pattern drill",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 207 Course Schedule 📖",
+     "minutes": 25,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/course-schedule/"
+    },
+    {
+     "label": "LC 210 Course Schedule II",
+     "minutes": 40,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/course-schedule-ii/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-21",
+   "entries": [
+    {
+     "label": "LC 269 Alien Dictionary",
+     "minutes": 60,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/alien-dictionary/"
+    },
+    {
+     "label": "Read: Notes section 4 + templates/dsu.hpp",
+     "minutes": 45,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|Read:Notes section 4 + templates/dsu.hpp"
+    },
+    {
+     "label": "LC 684 Redundant Connection 📖",
+     "minutes": 25,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/redundant-connection/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-22",
+   "entries": [
+    {
+     "label": "LC 1319 Number of Operations to Make Network Co…",
+     "minutes": 40,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/number-of-operations-to-make-network-connected/"
+    },
+    {
+     "label": "LC 827 Making A Large Island",
+     "minutes": 60,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/making-a-large-island/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-23",
+   "entries": [
+    {
+     "label": "LC 305 Number of Islands II",
+     "minutes": 60,
+     "module": "14-graphs-traversal-topo-dsu",
+     "key": "14-graphs-traversal-topo-dsu|https://leetcode.com/problems/number-of-islands-ii/"
+    },
+    {
+     "label": "Read: Notes section 1 + templates/graph.hpp (dijkstra, zero_one_bfs)",
+     "minutes": 60,
+     "module": "15-shortest-path-mst-advanced",
+     "key": "15-shortest-path-mst-advanced|Read:Notes section 1 + templates/graph.hpp (dijkstra, zero_one_bfs)"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-24",
+   "entries": [
+    {
+     "label": "LC 743 Network Delay Time 📖",
+     "minutes": 25,
+     "module": "15-shortest-path-mst-advanced",
+     "key": "15-shortest-path-mst-advanced|https://leetcode.com/problems/network-delay-time/"
+    },
+    {
+     "label": "LC 1631 Path With Minimum Effort",
+     "minutes": 40,
+     "module": "15-shortest-path-mst-advanced",
+     "key": "15-shortest-path-mst-advanced|https://leetcode.com/problems/path-with-minimum-effort/"
+    },
+    {
+     "label": "LC 2290 Minimum Obstacle Removal to Reach Corner 📖",
+     "minutes": 35,
+     "module": "15-shortest-path-mst-advanced",
+     "key": "15-shortest-path-mst-advanced|https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-25",
+   "entries": [
+    {
+     "label": "Rest day",
+     "minutes": 0,
+     "module": "",
+     "key": null
+    }
+   ]
+  },
+  {
+   "date": "2026-12-26",
+   "entries": [
+    {
+     "label": "Timed mock round (`/mock`) + post-mortem",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "Read: Notes section 2",
+     "minutes": 45,
+     "module": "15-shortest-path-mst-advanced",
+     "key": "15-shortest-path-mst-advanced|Read:Notes section 2"
+    },
+    {
+     "label": "LC 787 Cheapest Flights Within K Stops 📖",
+     "minutes": 25,
+     "module": "15-shortest-path-mst-advanced",
+     "key": "15-shortest-path-mst-advanced|https://leetcode.com/problems/cheapest-flights-within-k-stops/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-27",
+   "entries": [
+    {
+     "label": "Weekly review: redo #redo items, re-solve 2 📖 from memory, 10-min pattern drill",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 1334 Find the City With the Smallest Number …",
+     "minutes": 40,
+     "module": "15-shortest-path-mst-advanced",
+     "key": "15-shortest-path-mst-advanced|https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/"
+    },
+    {
+     "label": "Read: Notes section 3",
+     "minutes": 45,
+     "module": "15-shortest-path-mst-advanced",
+     "key": "15-shortest-path-mst-advanced|Read:Notes section 3"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-28",
+   "entries": [
+    {
+     "label": "LC 1584 Min Cost to Connect All Points 📖",
+     "minutes": 25,
+     "module": "15-shortest-path-mst-advanced",
+     "key": "15-shortest-path-mst-advanced|https://leetcode.com/problems/min-cost-to-connect-all-points/"
+    },
+    {
+     "label": "LC 1135 Connecting Cities With Minimum Cost",
+     "minutes": 40,
+     "module": "15-shortest-path-mst-advanced",
+     "key": "15-shortest-path-mst-advanced|https://leetcode.com/problems/connecting-cities-with-minimum-cost/"
+    },
+    {
+     "label": "Read: Notes section 4: Tarjan low-link, Kosaraju, Edmonds–Karp / Dinic, min cut",
+     "minutes": 60,
+     "module": "15-shortest-path-mst-advanced",
+     "key": "15-shortest-path-mst-advanced|Read:Notes section 4: Tarjan low-link, Kosaraju, Edmonds–Karp / Dinic, min cut"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-29",
+   "entries": [
+    {
+     "label": "LC 1192 Critical Connections in a Network 📖",
+     "minutes": 35,
+     "module": "15-shortest-path-mst-advanced",
+     "key": "15-shortest-path-mst-advanced|https://leetcode.com/problems/critical-connections-in-a-network/"
+    },
+    {
+     "label": "LC 1568 Minimum Number of Days to Disconnect Is…",
+     "minutes": 60,
+     "module": "15-shortest-path-mst-advanced",
+     "key": "15-shortest-path-mst-advanced|https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-30",
+   "entries": [
+    {
+     "label": "LC 1520 Maximum Number of Non-Overlapping Subst…",
+     "minutes": 60,
+     "module": "15-shortest-path-mst-advanced",
+     "key": "15-shortest-path-mst-advanced|https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/"
+    },
+    {
+     "label": "Read: Notes section 1: the recipe (state, transition, base case, order, answer)",
+     "minutes": 60,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|Read:Notes section 1: the recipe (state, transition, base case, order, answer)"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-31",
+   "entries": [
+    {
+     "label": "LC 746 Min Cost Climbing Stairs",
+     "minutes": 20,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/min-cost-climbing-stairs/"
+    },
+    {
+     "label": "LC 198 House Robber 📖",
+     "minutes": 25,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/house-robber/"
+    },
+    {
+     "label": "LC 139 Word Break",
+     "minutes": 40,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/word-break/"
+    },
+    {
+     "label": "Read: Notes section 2",
+     "minutes": 45,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|Read:Notes section 2"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-01",
+   "entries": [
+    {
+     "label": "Rest day",
+     "minutes": 0,
+     "module": "",
+     "key": null
+    }
+   ]
+  },
+  {
+   "date": "2027-01-02",
+   "entries": [
+    {
+     "label": "Timed mock round (`/mock`) + post-mortem",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 62 Unique Paths 📖",
+     "minutes": 25,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/unique-paths/"
+    },
+    {
+     "label": "LC 63 Unique Paths II",
+     "minutes": 40,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/unique-paths-ii/"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-03",
+   "entries": [
+    {
+     "label": "Weekly review: redo #redo items, re-solve 2 📖 from memory, 10-min pattern drill",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "Read: Notes section 3: 0/1 vs unbounded loops, LIS in O(n log n), LCS / edit distance tables",
+     "minutes": 90,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|Read:Notes section 3: 0/1 vs unbounded loops, LIS in O(n log n), LCS / edit distance tables"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-04",
+   "entries": [
+    {
+     "label": "LC 416 Partition Equal Subset Sum 📖",
+     "minutes": 25,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/partition-equal-subset-sum/"
+    },
+    {
+     "label": "LC 494 Target Sum",
+     "minutes": 40,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/target-sum/"
+    },
+    {
+     "label": "LC 1049 Last Stone Weight II",
+     "minutes": 40,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/last-stone-weight-ii/"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-05",
+   "entries": [
+    {
+     "label": "LC 518 Coin Change II",
+     "minutes": 40,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/coin-change-ii/"
+    },
+    {
+     "label": "LC 322 Coin Change 📖",
+     "minutes": 25,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/coin-change/"
+    },
+    {
+     "label": "LC 300 Longest Increasing Subsequence 📖",
+     "minutes": 25,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/longest-increasing-subsequence/"
+    },
+    {
+     "label": "LC 673 Number of Longest Increasing Subsequence",
+     "minutes": 40,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/number-of-longest-increasing-subsequence/"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-06",
+   "entries": [
+    {
+     "label": "LC 1143 Longest Common Subsequence 📖",
+     "minutes": 25,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/longest-common-subsequence/"
+    },
+    {
+     "label": "LC 718 Maximum Length of Repeated Subarray",
+     "minutes": 40,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/maximum-length-of-repeated-subarray/"
+    },
+    {
+     "label": "LC 516 Longest Palindromic Subsequence",
+     "minutes": 40,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/longest-palindromic-subsequence/"
+    },
+    {
+     "label": "LC 72 Edit Distance 📖",
+     "minutes": 25,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/edit-distance/"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-07",
+   "entries": [
+    {
+     "label": "LC 44 Wildcard Matching",
+     "minutes": 60,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/wildcard-matching/"
+    },
+    {
+     "label": "LC 714 Best Time to Buy and Sell Stock with Tr…",
+     "minutes": 40,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-08",
+   "entries": [
+    {
+     "label": "LC 188 Best Time to Buy and Sell Stock IV",
+     "minutes": 60,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-09",
+   "entries": [
+    {
+     "label": "Timed mock round (`/mock`) + post-mortem",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "Read: Notes section 4",
+     "minutes": 90,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|Read:Notes section 4"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-10",
+   "entries": [
+    {
+     "label": "Weekly review: redo #redo items, re-solve 2 📖 from memory, 10-min pattern drill",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 1039 Minimum Score Triangulation of Polygon",
+     "minutes": 40,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/minimum-score-triangulation-of-polygon/"
+    },
+    {
+     "label": "LC 312 Burst Balloons 📖",
+     "minutes": 35,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/burst-balloons/"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-11",
+   "entries": [
+    {
+     "label": "LC 132 Palindrome Partitioning II",
+     "minutes": 60,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/palindrome-partitioning-ii/"
+    },
+    {
+     "label": "LC 337 House Robber III 📖",
+     "minutes": 25,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/house-robber-iii/"
+    },
+    {
+     "label": "LC 1986 Minimum Number of Work Sessions to Fini… 📖",
+     "minutes": 25,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-12",
+   "entries": [
+    {
+     "label": "LC 2376 Count Special Integers 📖",
+     "minutes": 35,
+     "module": "16-dynamic-programming",
+     "key": "16-dynamic-programming|https://leetcode.com/problems/count-special-integers/"
+    },
+    {
+     "label": "Read: Notes section 1 + templates/sparse_table.hpp",
+     "minutes": 45,
+     "module": "17-range-queries",
+     "key": "17-range-queries|Read:Notes section 1 + templates/sparse_table.hpp"
+    },
+    {
+     "label": "Read: Notes section 2 + templates/fenwick.hpp",
+     "minutes": 45,
+     "module": "17-range-queries",
+     "key": "17-range-queries|Read:Notes section 2 + templates/fenwick.hpp"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-13",
+   "entries": [
+    {
+     "label": "LC 307 Range Sum Query - Mutable 📖",
+     "minutes": 25,
+     "module": "17-range-queries",
+     "key": "17-range-queries|https://leetcode.com/problems/range-sum-query-mutable/"
+    },
+    {
+     "label": "LC 315 Count of Smaller Numbers After Self 📖",
+     "minutes": 35,
+     "module": "17-range-queries",
+     "key": "17-range-queries|https://leetcode.com/problems/count-of-smaller-numbers-after-self/"
+    },
+    {
+     "label": "Read: Notes section 3 + templates/segment_tree.hpp",
+     "minutes": 60,
+     "module": "17-range-queries",
+     "key": "17-range-queries|Read:Notes section 3 + templates/segment_tree.hpp"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-14",
+   "entries": [
+    {
+     "label": "LC 732 My Calendar III",
+     "minutes": 60,
+     "module": "17-range-queries",
+     "key": "17-range-queries|https://leetcode.com/problems/my-calendar-iii/"
+    },
+    {
+     "label": "LC 699 Falling Squares",
+     "minutes": 60,
+     "module": "17-range-queries",
+     "key": "17-range-queries|https://leetcode.com/problems/falling-squares/"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-15",
+   "entries": [
+    {
+     "label": "Read: projects/17-range-query-engine/README.md: spec + milestones",
+     "minutes": 30,
+     "module": "17-range-queries",
+     "key": "17-range-queries|Read:projects/17-range-query-engine/README.md: spec + milestones"
+    },
+    {
+     "label": "Project: Milestone 1: brute-force baseline + differential tester, then Fenwick + sparse table behind the engine interface",
+     "minutes": 90,
+     "module": "17-range-queries",
+     "key": "17-range-queries|Project:Milestone 1: brute-force baseline + differential tester, then Fenwick + sparse table behind the engine interface"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-16",
+   "entries": [
+    {
+     "label": "Timed mock round (`/mock`) + post-mortem",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "Project: Milestone 2: lazy segment tree (add + assign, sum + min), stress-tested against brute force",
+     "minutes": 90,
+     "module": "17-range-queries",
+     "key": "17-range-queries|Project:Milestone 2: lazy segment tree (add + assign, sum + min), stress-tested against brute force"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-17",
+   "entries": [
+    {
+     "label": "Weekly review: redo #redo items, re-solve 2 📖 from memory, 10-min pattern drill",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "Project: Milestone 3: benchmark n = 10³…10⁶; write up where each structure wins in the README",
+     "minutes": 45,
+     "module": "17-range-queries",
+     "key": "17-range-queries|Project:Milestone 3: benchmark n = 10³…10⁶; write up where each structure wins in the README"
+    },
+    {
+     "label": "Read: Notes section 1 + templates/xor_trie.hpp",
+     "minutes": 30,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|Read:Notes section 1 + templates/xor_trie.hpp"
+    },
+    {
+     "label": "LC 421 Maximum XOR of Two Numbers in an Array 📖",
+     "minutes": 25,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-18",
+   "entries": [
+    {
+     "label": "LC 1707 Maximum XOR With an Element From Array",
+     "minutes": 60,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|https://leetcode.com/problems/maximum-xor-with-an-element-from-array/"
+    },
+    {
+     "label": "Read: Notes section 2",
+     "minutes": 45,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|Read:Notes section 2"
+    },
+    {
+     "label": "LC 136 Single Number",
+     "minutes": 20,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|https://leetcode.com/problems/single-number/"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-19",
+   "entries": [
+    {
+     "label": "LC 191 Number of 1 Bits",
+     "minutes": 20,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|https://leetcode.com/problems/number-of-1-bits/"
+    },
+    {
+     "label": "LC 645 Set Mismatch",
+     "minutes": 20,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|https://leetcode.com/problems/set-mismatch/"
+    },
+    {
+     "label": "LC 137 Single Number II 📖",
+     "minutes": 25,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|https://leetcode.com/problems/single-number-ii/"
+    },
+    {
+     "label": "LC 260 Single Number III",
+     "minutes": 40,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|https://leetcode.com/problems/single-number-iii/"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-20",
+   "entries": [
+    {
+     "label": "Read: Notes section 3 + templates/number_theory.hpp",
+     "minutes": 45,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|Read:Notes section 3 + templates/number_theory.hpp"
+    },
+    {
+     "label": "LC 204 Count Primes 📖",
+     "minutes": 25,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|https://leetcode.com/problems/count-primes/"
+    },
+    {
+     "label": "LC 1922 Count Good Numbers",
+     "minutes": 40,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|https://leetcode.com/problems/count-good-numbers/"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-21",
+   "entries": [
+    {
+     "label": "Read: Notes section 4 + templates/strings.hpp",
+     "minutes": 75,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|Read:Notes section 4 + templates/strings.hpp"
+    },
+    {
+     "label": "LC 28 Find the Index of the First Occurrence … 📖",
+     "minutes": 15,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-22",
+   "entries": [
+    {
+     "label": "LC 1392 Longest Happy Prefix",
+     "minutes": 60,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|https://leetcode.com/problems/longest-happy-prefix/"
+    },
+    {
+     "label": "LC 686 Repeated String Match",
+     "minutes": 40,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|https://leetcode.com/problems/repeated-string-match/"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-23",
+   "entries": [
+    {
+     "label": "Timed mock round (`/mock`) + post-mortem",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 647 Palindromic Substrings",
+     "minutes": 40,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|https://leetcode.com/problems/palindromic-substrings/"
+    },
+    {
+     "label": "LC 1044 Longest Duplicate Substring 📖",
+     "minutes": 35,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|https://leetcode.com/problems/longest-duplicate-substring/"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-24",
+   "entries": [
+    {
+     "label": "Weekly review: redo #redo items, re-solve 2 📖 from memory, 10-min pattern drill",
+     "minutes": 60,
+     "module": "",
+     "key": null
+    },
+    {
+     "label": "LC 214 Shortest Palindrome",
+     "minutes": 60,
+     "module": "18-specialist-toolkit",
+     "key": "18-specialist-toolkit|https://leetcode.com/problems/shortest-palindrome/"
+    },
+    {
+     "label": "Read: Notes section 1: finding company sets, what each kind of company tests, the Indian OA landscape",
+     "minutes": 45,
+     "module": "19-company-mocks",
+     "key": "19-company-mocks|Read:Notes section 1: finding company sets, what each kind of company tests, the Indian OA landscape"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-25",
+   "entries": [
+    {
+     "label": "Research: Target list: 8–10 companies; for each, the loop format and the topics that recur (Glassdoor / LeetCode Discuss)",
+     "minutes": 45,
+     "module": "19-company-mocks",
+     "key": "19-company-mocks|Research:Target list: 8–10 companies; for each, the loop format and the topics that recur (Glassdoor / LeetCode Discuss)"
+    },
+    {
+     "label": "Practice: Company set 1: 4 recent problems for your #1 target, timed, stdin/stdout if their OA uses it",
+     "minutes": 90,
+     "module": "19-company-mocks",
+     "key": "19-company-mocks|Practice:Company set 1: 4 recent problems for your #1 target, timed, stdin/stdout if their OA uses it"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-26",
+   "entries": [
+    {
+     "label": "Practice: Company set 2: 4 recent problems for your #2 and #3 targets, timed",
+     "minutes": 90,
+     "module": "19-company-mocks",
+     "key": "19-company-mocks|Practice:Company set 2: 4 recent problems for your #2 and #3 targets, timed"
+    },
+    {
+     "label": "Read: Notes section 2: the 45-minute script and what interviewers score",
+     "minutes": 30,
+     "module": "19-company-mocks",
+     "key": "19-company-mocks|Read:Notes section 2: the 45-minute script and what interviewers score"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-27",
+   "entries": [
+    {
+     "label": "Mock: Full mock A: `/mock` with an unseen Medium + the follow-up turn",
+     "minutes": 60,
+     "module": "19-company-mocks",
+     "key": "19-company-mocks|Mock:Full mock A: `/mock` with an unseen Medium + the follow-up turn"
+    },
+    {
+     "label": "Mock: Full mock B: `/mock hard` with an unseen Hard",
+     "minutes": 60,
+     "module": "19-company-mocks",
+     "key": "19-company-mocks|Mock:Full mock B: `/mock hard` with an unseen Hard"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-28",
+   "entries": [
+    {
+     "label": "Read: Notes section 3 + mocks/_postmortem-template.md",
+     "minutes": 20,
+     "module": "19-company-mocks",
+     "key": "19-company-mocks|Read:Notes section 3 + mocks/_postmortem-template.md"
+    },
+    {
+     "label": "Review: Re-read every post-mortem in mocks/; turn the 3 most frequent misses into #redo items and flashcards",
+     "minutes": 45,
+     "module": "19-company-mocks",
+     "key": "19-company-mocks|Review:Re-read every post-mortem in mocks/; turn the 3 most frequent misses into #redo items and flashcards"
+    },
+    {
+     "label": "Read: Notes section 4: the follow-up bank, by pattern",
+     "minutes": 30,
+     "module": "19-company-mocks",
+     "key": "19-company-mocks|Read:Notes section 4: the follow-up bank, by pattern"
+    },
+    {
+     "label": "Drill: Follow-up drill: 6 solved problems, answer their follow-ups out loud from the Notes section 4 bank",
+     "minutes": 30,
+     "module": "19-company-mocks",
+     "key": "19-company-mocks|Drill:Follow-up drill: 6 solved problems, answer their follow-ups out loud from the Notes section 4 bank"
+    }
+   ]
+  }
+ ]
+}

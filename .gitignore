@@ -1,0 +1,11 @@
+# Build output (make test / make run): binaries, .d dependency files, .dSYM debug bundles
+build/
+projects/*/build/
+*.dSYM/
+.DS_Store
+__pycache__/
+*.pyc
+
+# Personal: your target companies stay on this machine (the repo is public)
+practice/companies.md
+_site/
