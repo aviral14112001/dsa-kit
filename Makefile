@@ -16,7 +16,7 @@ MAKEFLAGS += -j$(NPROC) --no-print-directory
 
 START ?= $(shell date +%Y-%m-%d)
 
-.PHONY: help test check snippets progress schedule replan today dashboard dashboard-stop run clean
+.PHONY: help test check snippets progress schedule replan today dashboard dashboard-stop sync run clean
 
 help:
 	@echo "make run F=practice/x.cpp [IN=in.txt]   compile your file with sanitizers + -DLOCAL and run it"
@@ -74,3 +74,7 @@ dashboard:
 
 dashboard-stop:
 	@pkill -f scripts/dashboard.py && echo "dashboard stopped" || echo "dashboard was not running"
+
+# Ticks made on the web dashboard are commits on GitHub; ticks made here are local edits. Merge both ways.
+sync:
+	@git add -A && (git diff --cached --quiet || git commit -q -m "Progress $$(date +%Y-%m-%d)") && git pull -q --rebase && git push -q && echo "synced with GitHub"

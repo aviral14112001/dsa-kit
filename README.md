@@ -58,6 +58,16 @@ problem link is checked against LeetCode's official list (`make check`). Subtopi
   pattern-classification drill.
 - Rest days are built in for Diwali (8 Nov), Christmas and New Year's Day. Change them with `--rest` in `scripts/schedule.py`.
 
+## On the web
+
+The same dashboard is live at **https://aviral14112001.github.io/dsa-kit/**. GitHub Actions rebuilds it on every push.
+It shows progress and notes to anyone. To tick problems from the web, click **Connect GitHub** and paste a
+[fine-grained token](https://github.com/settings/personal-access-tokens/new) with access to **only this repository**
+and **Contents: Read and write**. The token stays in that browser; each tick becomes a commit.
+
+Web ticks land on GitHub, and local ticks land in your files, so run `make sync` before and after working on your Mac.
+`practice/companies.md` stays on your Mac only (it's gitignored), since the repo is public.
+
 ## Using Claude as a tutor
 
 Open Claude Code in this folder (or anywhere under `~/Documents/VSCode`). [CLAUDE.md](CLAUDE.md) sets the rules: hints
@@ -103,6 +113,7 @@ Hours are Core work only; weekly reviews, mocks and rest days come on top (the w
 | Command | Does |
 |---|---|
 | `make dashboard` | Browser dashboard on localhost:8765: every module and problem, progress, pace, today/overdue/#redo. Ticking there edits problems.md |
+| `make sync` | Commit local progress, pull ticks made on the web, push |
 | `make today` | Today's plan with [x]/[ ] status, overdue items, `#redo` list |
 | `make progress` | Progress bars per module, what's next |
 | `make run F=file.cpp [IN=input.txt]` | Compile with warnings + ASan + UBSan + `-DLOCAL`, then run |
