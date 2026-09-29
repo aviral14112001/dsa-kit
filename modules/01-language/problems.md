@@ -18,7 +18,7 @@ Timebox: Easy 20 min · Medium 40 · Hard 60. At the timebox, take one hint (ask
 ### 2. Types & memory — value vs reference semantics, mutability, integer overflow
 
 - [ ] **Read** · Notes section 2 + examples/value_vs_reference.cpp + examples/overflow.cpp · 60m
-- [x] [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/) · Medium · `overflow guard` — added · detect 32-bit overflow before it happens, without using 64-bit #redo
+- [ ] [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/) · Medium · `overflow guard` — added · detect 32-bit overflow before it happens, without using 64-bit #redo
 - [ ] [1822. Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array/) · Easy · `avoid overflow` — added · multiplying would overflow, so track only the sign
 
 ### 3. Standard library fluency — collections, sorting, iterators, string builders
