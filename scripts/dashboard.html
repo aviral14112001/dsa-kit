@@ -309,7 +309,7 @@ async function load() {
 async function setItem(id, done, redo) {
   const it = byId(id);
   if (!it) return;
-  if (!canWrite()) { toast('Read-only here: connect GitHub (top right) to tick'); render(); return; }
+  if (!canWrite()) { render(); if (!(await connect())) return; }
   const path = `modules/${it.module.dir}/problems.md`;
   const lines = FILES[path].text.split('\n'), i = +id.split(':').pop() - 1;
   if (lines[i] !== it.raw) { await load(); toast('That list changed elsewhere; reloaded. Try again.'); return; }
@@ -319,7 +319,7 @@ async function setItem(id, done, redo) {
   const msg = `${done ? (redo ? 'Solve with help' : 'Solve') : redo ? 'Mark redo' : 'Untick'}: ${it.label}`;
   try {
     if (!(await writeFile(path, lines.join('\n'), msg))) { await load(); toast('That list changed elsewhere; reloaded. Try again.'); return; }
-  } catch (e) { toast(e.message); await load(); return; }
+  } catch (e) { alert('Could not save the tick: ' + e.message + (LOCAL ? '' : '\n\nCheck that the token has Contents: Read and write on ' + M.repo.owner + '/' + M.repo.name + ', or reconnect.')); await load(); return; }
   S = computeState(); render();
   if (done && !it.done) toast(LOCAL ? 'Ticked in problems.md' : 'Ticked: committed to GitHub');
 }
@@ -547,16 +547,21 @@ $('conn').addEventListener('click', async () => {
     if (confirm('Disconnect? Ticking stops working in this browser until you connect again.')) { try { localStorage.removeItem('ghToken'); } catch {} await load(); }
     return;
   }
-  const t = prompt('Paste a GitHub fine-grained token with Contents: Read and write on ' + M.repo.owner + '/' + M.repo.name +
-                   ' only. It stays in this browser (localStorage) and is sent only to api.github.com.');
-  if (!t) return;
-  const r = await fetch(`https://api.github.com/repos/${M.repo.owner}/${M.repo.name}`, { headers: { Authorization: 'Bearer ' + t.trim() } });
-  if (!r.ok) { toast('GitHub rejected that token (' + r.status + ')'); return; }
-  const j = await r.json();
-  if (!j.permissions?.push) { toast('That token can read but not write this repo'); return; }
-  try { localStorage.setItem('ghToken', t.trim()); } catch {}
-  toast('Connected: ticks now commit to GitHub'); await load();
+  await connect();
 });
+async function connect() {                        // true once a working token is saved
+  const t = prompt('To save ticks on the web, connect GitHub (one time per browser).\n\n' +
+                   'Paste a GitHub fine-grained token (github.com/settings/personal-access-tokens/new) with access to only ' +
+                   M.repo.owner + '/' + M.repo.name + ' and Contents: Read and write. It stays in this browser and is sent only to api.github.com.');
+  if (!t) return false;
+  const r = await fetch(`https://api.github.com/repos/${M.repo.owner}/${M.repo.name}`, { headers: { Authorization: 'Bearer ' + t.trim() } });
+  if (!r.ok) { alert('GitHub rejected that token (HTTP ' + r.status + '). Create a new one and try again.'); return false; }
+  const j = await r.json();
+  if (!j.permissions?.push) { alert('That token can read this repo but not write to it. Give it Contents: Read and write.'); return false; }
+  try { localStorage.setItem('ghToken', t.trim()); } catch { alert('This browser blocks localStorage, so the token cannot be saved.'); return false; }
+  await load(); toast('Connected to GitHub: ticks now save as commits');
+  return true;
+}
 load();
 setInterval(() => { if (document.visibilityState === 'visible' && !document.activeElement?.matches('input[type=search]')) load(); }, LOCAL ? 30000 : 120000);
 </script>
