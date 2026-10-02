@@ -24,7 +24,7 @@ Timebox: Easy 20 min · Medium 40 · Hard 60. At the timebox, take one hint (ask
 ### 3. Standard library fluency — collections, sorting, iterators, string builders
 
 - [ ] **Read** · Notes section 3 + examples/stl_tour.cpp + examples/comparators.cpp · 60m
-- [ ] [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) · Easy · `unordered_set` — added · the same question three ways: set, sort + adjacent compare, and why O(n²) dies
+- [x] [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) · Easy · `unordered_set` — added · the same question three ways: set, sort + adjacent compare, and why O(n²) dies
 - [ ] [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/) · Easy · `counting array` — added · `int cnt[26]` beats a map; learn `c - 'a'`
 - [ ] [1636. Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/) · Easy · 📖 · `custom comparator` — added · multi-key sort with a lambda that captures a frequency map
 - [ ] [1768. Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) · Easy · `string building` — added · `std::string` is mutable, and `+=` is amortized O(1), unlike C# strings
