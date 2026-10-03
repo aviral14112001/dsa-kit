@@ -31,5 +31,5 @@ Timebox: Easy 20 min · Medium 40 · Hard 60. At the timebox, take one hint (ask
 
 ### 4. Idioms & fast I/O — the boilerplate you can type from muscle memory
 
-- [ ] **Read** · Notes section 4 + examples/fast_io.cpp (the stdin template OAs expect) · 45m
+- [x] **Read** · Notes section 4 + examples/fast_io.cpp (the stdin template OAs expect) · 45m
 - [ ] **Drill** · Type the LeetCode skeleton and the stdin template from memory until each takes under 2 minutes · 30m
