@@ -18,7 +18,7 @@ Timebox: Easy 20 min · Medium 40 · Hard 60. At the timebox, take one hint (ask
 
 - [ ] **Read** · Notes section 2: the four skeletons, each with one traced example · 45m
 - [x] [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) · Easy · `two pointers (converging)` — added · the converging-pointers skeleton on its easiest input
-- [ ] [643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) · Easy · `fixed sliding window` — added · the fixed-window skeleton: add one element, drop one, never re-sum
+- [x] [643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) · Easy · `fixed sliding window` — added · the fixed-window skeleton: add one element, drop one, never re-sum
 - [ ] [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/) · Easy · `binary search on answer` — added for the sheet's “Find Nth root of a number” (no LeetCode link) · "largest x with x·x ≤ n": search the answer, not the array
 
 ### 3. Traversal & state patterns — BFS levels, DFS with backtracking, memoise-then-tabulate
