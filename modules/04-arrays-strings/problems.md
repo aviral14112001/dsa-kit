@@ -11,7 +11,7 @@ Timebox: Easy 20 min · Medium 40 · Hard 60. At the timebox, take one hint (ask
 
 ### 1. In-place manipulation — rotation, reversal, partitioning, Dutch national flag
 
-- [ ] **Read** · Notes section 1 · 45m
+- [x] **Read** · Notes section 1 · 45m
 - [x] [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/) · Easy · `stable partition` — added · move the kept elements forward, fill the rest #redo
 - [x] [189. Rotate Array](https://leetcode.com/problems/rotate-array/) · Medium · 📖 · `triple reverse` — added · rotate by reversing three times: O(1) space, and provably correct
 - [ ] [75. Sort Colors](https://leetcode.com/problems/sort-colors/) · Medium · 📖 · `Dutch national flag` — sheet: Sort an array of 0's 1's and 2's · three regions, three pointers, one pass · [video](https://youtu.be/tp8JIuCXBaU)
